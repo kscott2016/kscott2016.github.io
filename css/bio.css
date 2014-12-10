@@ -103,16 +103,22 @@ h4{
   @-webkit-keyframes changeColors{
 
     0% {color: #F8EAFC;}
-    25% {color:#D65CFF;}
-    50% {color:#FF33CC;}
-    75% {color:#FF70DB;}
+    /*10% {color:#D65CFF;}
+    20%{color:#D65CFF;}
+    30%{color:#D65CFF;}*/
+    50%{color:#D65CFF;}
+    /*50% {color:#FF33CC;}
+    60%{color:#FF33CC;}
+    40%{color:#FF33CC;}
+    80% {color:#FF70DB;}
+    /*90%{color:#F8EAFC;}*/
     100%{color:#F8EAFC;}
   }
 
   .change_color{
     -webkit-animation-name: changeColors;
-    -webkit-animation-duration:10s;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration:600s;
+    -webkit-animation-iteration-count:3;
     animation-name: change_color;
 
   }
