@@ -12,18 +12,21 @@ body {
   color: #222;
 }
 
+a{
+  color: #000000;
+}
+
 span{
   align:center;
   position: relative;
   height: 50px;
   display: inline-block;
-  padding-right:3em;
-  padding-left:3em;
+  padding-right:2em;
+  padding-left:2em;
+  padding-bottom:1em;
 }
 
-p{
-  margin-bottom:1em;
-}
+
 section {
   border-bottom: 3px solid #F660AB;
   padding-bottom: 0.2em;
@@ -37,7 +40,8 @@ ul{
 nav{
   font-family: 'Lobster Two', cursive;
   border-bottom: 3px solid #F660AB;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
+  text-align:center;
   /*margin-bottom: 1em;*/
 }
 
@@ -50,6 +54,12 @@ header {
 }
 
 
+img{
+  float:left;
+  border:1px solid #FF1975;
+  width:250px;
+  height:275px;
+}
 h2 {
   font-family: 'Lobster Two', cursive;
   color: #F660AB;
@@ -62,21 +72,31 @@ h3{
 
 #container {
   width: 900px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-left: 5em;
+  margin-right: 5em;
   padding: 1em;
+
   /*border: 1px solid #333;*/
 }
 
 
-
 .circle3{
     display:block;
-    width:100px;
-    height:100px;
-    border-radius:100px;
-    font-size:20px;
+    width:75px;
+    height:75px;
+    border-radius:75px;
+    font-size:15px;
     color:#fff;
-    line-height:100px;
+    line-height:75px;
+    text-align:center;
+    background:#FF66CC;
+  }
+
+  .rectangle{
+    display:block;
+    width:75px;
+    height:125px;
     text-align:center;
     background:#FF66CC;
   }
