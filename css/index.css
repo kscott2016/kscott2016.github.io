@@ -1,0 +1,123 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed|Hammersmith+One);
+
+nav{
+
+    font-family: 'Lobster Two', cursive;
+    border-bottom: 3px solid #F660AB;
+    padding-bottom: 1em;
+    text-align:center;
+    /*margin-bottom: 1em;*/
+
+}
+
+span{
+  align:center;
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  padding-right:2em;
+  padding-left:2em;
+  padding-bottom:1em;
+}
+
+
+body{
+  background-image:url("../img/galaxy_background.jpg");
+}
+
+p{
+
+  font-family: 'Hammersmith One', sans-serif;
+  color: #25092E;
+  text-indent: 20px;
+  padding-right:2px;
+  padding-left:2px;
+  padding-bottom:2px;
+  padding-top:2px;
+}
+
+img{
+  border:1px solid #FF1975;
+  width:250px;
+  height:275px;
+}
+h2 {
+  font-family: 'Lobster Two', cursive;
+  /*color: rgb(252,223,251);*/
+  margin-bottom:0.5em;
+  text-align:center;
+  font-size: 200%;
+}
+
+h4{
+  font-family: 'Lobster Two', cursive;
+  /*color: rgb(252,223,251);*/
+  margin-bottom:0.5em;
+  text-align:center;
+  font-size: 100%;
+}
+
+#container {
+  width: 900px;
+  height: 900px;
+  margin-left: 0em;
+  margin-right: 0em;
+  padding: 1em;
+}
+.rectangle{
+  float:left;
+  display:block;
+  width:200px;
+  height:900px;
+  text-align:center;
+  background:#FF66CC;
+}
+
+/*.circle2{
+  display:block;
+  width:75px;
+  height:75px;
+  border-radius:75px;
+  font-size:15px;
+  color:#fff;
+  line-height:75px;
+  text-align:center;
+  background:#FF66CC;
+
+}*/
+
+.circle3{
+    display:block;
+    width:75px;
+    height:75px;
+    border-radius:75px;
+    font-size:15px;
+    color:#fff;
+    line-height:75px;
+    text-align:center;
+    background:#FF66CC;
+  }
+
+  @-webkit-keyframes changeColors{
+
+    0% {color: #F8EAFC;}
+    25% {color:#D65CFF;}
+    50% {color:#FF33CC;}
+    75% {color:#FF70DB;}
+    100%{color:#F8EAFC;}
+  }
+
+  .change_color{
+    -webkit-animation-name: changeColors;
+    -webkit-animation-duration:10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change_color;
+
+  }
+
+  .textWrap{
+    float:right;
+    margin: 10px;
+  }
