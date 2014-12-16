@@ -7,7 +7,14 @@ document.getElementById('links').onclick = function (event) {
     blueimp.Gallery(links, options);
 };
 
-blueimp.Gallery([
+blueimp.Gallery(
+  document.getElementById('videos').getElementsByTagName('a'),
+  {
+    container: '#blueimp-gallery-carousel',
+    carousel: true
+  }
+);
+/*blueimp.Gallery([
   {
     title: 'Is it Worth It?',
     href: 'https://www.youtube.com/watch?v=93LxMbYWk3s&list=UUfcnp8650oZXuvujfJAoHeQ',
@@ -15,12 +22,4 @@ blueimp.Gallery([
     youtube: 'VIDEO_ID',
     poster: 'https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg'
   },
-  ]);
-
-  blueimp.Gallery(
-    document.getElementById('links2').getElementsByTagName('a'),
-    {
-      container: '#blueimp-gallery-carousel',
-      carousel: true
-    }
-  );
+  ]);*/

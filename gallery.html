@@ -13,10 +13,11 @@
   <link rel="stylesheet" href="css/blueimp-gallery-video.css">
 
 
+
 </head>
 
 <body background="img/galaxy_background2.jpg">
-  <div id="container">
+  <div id="container" class="pt-triggers">
     <header class="animated rubberBand">
       <h1  class="change_color"> Krystina C. Scott</h1>
       <h2  class="change_color"> My Gallery</h2>
@@ -39,6 +40,7 @@
       <ol class="indicator"></ol>
     </div>
 
+    <h2 class="change_color"> My Images </h2>
     <div id="links" >
 
       <a href="img/AKAdemics_flyer.jpg" title="AKAdemics flyer"><img src="img/thumbnails/AKAdemics_flyer_thumbnail.jpg" alt="AKAdemics flyer"></a>
@@ -56,23 +58,21 @@
       <a href="img/cnlshirts3.jpg" title="CNL shirt designs"><img src="img/thumbnails/cnlshirts3_thumbnail.jpg"></a>
 
     <a href="img/NSBEandSWE.jpg" title="NSBE and SWE"><img src="img/thumbnails/NSBEandSWE_thumbnail.jpg"></a>
-      <!--<a href="http://youtu.be/93LxMbYWk3s" title="video 1"><video src="http://youtu.be/93LxMbYWk3s"></video></a>-->
-    </div>
 
-    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-      <div class="slides"></div>
-      <h3 class="title"></h3>
-      <a class="prev">‹</a>
-      <a class="next">›</a>
-      <a class="play-pause"></a>
-      <ol class="indicator"></ol>
-    </div>
+    <iframe width="200" height="150" src="http:www.youtube.com/embed/93LxMbYWk3s" frameborder="0" allowfullscreen></iframe>
 
-    <div id="links2" >
-      <a href="http://youtu.be/93LxMbYWk3s" title="Is it Worth It?">
-    </div>
+    <iframe width="200" height="150" src="http:www.youtube.com/embed/KFpZ9dnYWxY" frameborder="0" allowfullscreen></iframe>
 
+    <!--<a href="http:www.youtube.com/embed/93LxMbYWk3s"><img src="img/thumbnails/video_preview.jpg"></a>-->
+  </div>
 
+  <div id="videos" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="play-pause"></a>
+  </div>
 
 </main>
 </div>
@@ -81,5 +81,6 @@
 <script src="js/gallery.js"></script>
 <script src="js/blueimp-gallery-video.js"></script>
 <script src="js/blueimp-gallery-youtube.js"></script>
+<script src="js/pagetransitions.js"></script>
 </body>
 </html>

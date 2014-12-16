@@ -1,0 +1,16 @@
+@media only screen and (max-device-width: 320px max-device-height: 568px){
+}
+}
+* {
+  font-size: 24pt;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+#container {
+  margin: 0;
+  width: 100%;
+}
+
+img{
+  float:none;
+}
