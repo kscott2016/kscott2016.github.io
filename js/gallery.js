@@ -9,15 +9,18 @@ document.getElementById('links').onclick = function (event) {
 
 blueimp.Gallery([
   {
-    title: 'Fruits',
-    href: 'https://example.org/videos/fruits.mp4',
-    type: 'video/mp4',
-    poster: 'https://example.org/images/fruits.jpg'
+    title: 'Is it Worth It?',
+    href: 'https://www.youtube.com/watch?v=93LxMbYWk3s&list=UUfcnp8650oZXuvujfJAoHeQ',
+    type: 'text/html',
+    youtube: 'VIDEO_ID',
+    poster: 'https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg'
   },
-  {
-    title: 'Banana',
-    href: 'https://example.org/images/banana.jpg',
-    type: 'image/jpeg',
-    thumbnail: 'https://example.org/thumbnails/banana.jpg'
-  }
   ]);
+
+  blueimp.Gallery(
+    document.getElementById('links2').getElementsByTagName('a'),
+    {
+      container: '#blueimp-gallery-carousel',
+      carousel: true
+    }
+  );

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/blueimp-gallery.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/blueimp-gallery-video.css">
 
 
 </head>
@@ -56,9 +57,19 @@
 
     <a href="img/NSBEandSWE.jpg" title="NSBE and SWE"><img src="img/thumbnails/NSBEandSWE_thumbnail.jpg"></a>
       <!--<a href="http://youtu.be/93LxMbYWk3s" title="video 1"><video src="http://youtu.be/93LxMbYWk3s"></video></a>-->
-      <iframe src="www.youtube.com/embed/93LxMbYWk3s"
-      width="200" height="150" frameborder="0" allowfullscreen></iframe>
+    </div>
 
+    <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+    </div>
+
+    <div id="links2" >
+      <a href="http://youtu.be/93LxMbYWk3s" title="Is it Worth It?">
     </div>
 
 
@@ -68,5 +79,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/blueimp-gallery.min.js"></script>
 <script src="js/gallery.js"></script>
+<script src="js/blueimp-gallery-video.js"></script>
+<script src="js/blueimp-gallery-youtube.js"></script>
 </body>
 </html>
