@@ -1,18 +1,16 @@
-@media only screen and (max-width: 320px max-height: 568px){
+*{
+  font-size:30pt;
+  background: transparent;
 }
 
-
-
-/*#container {
-  margin: 0;
-  width: 100%;
-}*/
+body
+{
+  max-width:320px;
+}
 
 img{
+  max-width:100px;
+  padding: 0px;
   float:none;
-}
-body{
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 200%;
-  color: #222;
+
 }

@@ -7,14 +7,14 @@
     Krystina's Bio
   </title>
   <link href="css/style.css" media="screen" rel="stylesheet" />
-  <link href="css/mobile.css" media="only screen and max-device-width: 320px max-device-height: 568px" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-width: 320px)" />
   <link rel="stylesheet" href="css/blueimp-gallery.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/animations.css">
 
   </head>
-  <body background="img/background.jpg">
 
+  <body class="background1">
     <div id="container">
       <header class="animated rubberBand">
         <h1  class="change_color"> Krystina C. Scott</h1>
@@ -26,10 +26,8 @@
             <span><a href="gallery.html" class="circle3"> Gallery</a></span>
             <span><a class ="circle3"> Home</a></span>
         </nav>
-        <section>
 
-          <article>
-            <aside>
+            <aside class="animated zoomIn">
               <p>
                 <img src="img/KS.jpg" alt="Krystina's profile" class="textWrap">
 
@@ -64,9 +62,13 @@
               </p>
 
           </aside>
-          </article>
-        </section>
       </main>
-  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/blueimp-gallery.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/blueimp-gallery-video.js"></script>
+  <script src="js/blueimp-gallery-youtube.js"></script>
+</div>
   </body>
 </html>
