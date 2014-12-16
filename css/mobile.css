@@ -1,5 +1,6 @@
+@media (max-width: 320px){
 *{
-  font-size:30pt;
+  font-size:15pt;
   background: transparent;
 }
 
@@ -8,9 +9,27 @@ body
   max-width:320px;
 }
 
+#profile{
+  width:150px;
+  height:200px;
+}
+
 img{
-  max-width:100px;
+
   padding: 0px;
   float:none;
 
+}
+
+.circle3{
+  display:block;
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  font-size:20px;
+  color:#fff;
+  line-height:50px;
+  text-align:center;
+  background:#FF66CC;
+}
 }
