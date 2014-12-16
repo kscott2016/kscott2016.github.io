@@ -1,13 +1,13 @@
 @media (max-width: 320px){
-*{
-  font-size:15pt;
-  background: transparent;
-}
+
 
 body
 {
   max-width:320px;
+  font-size:15pt;
+  background: transparent;
 }
+
 
 #profile{
   width:150px;
