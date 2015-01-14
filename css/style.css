@@ -9,6 +9,14 @@ body{
 
 }
 
+.name{
+  color:#F8EAFC;
+}
+
+.description{
+  color:#F8EAFC;
+}
+
 .background1{
   background: url("../img/background.jpg") no-repeat 50% 50% fixed;
   background-size: cover;
