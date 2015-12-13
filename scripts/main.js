@@ -1,16 +1,28 @@
-jQuery(document).ready(function(){
-	var accordionsMenu = $('.cd-accordion-menu');
 
-	if( accordionsMenu.length > 0 ) {
-		
-		accordionsMenu.each(function(){
-			var accordion = $(this);
-			//detect change in the input[type="checkbox"] value
-			accordion.on('change', 'input[type="checkbox"]', function(){
-				var checkbox = $(this);
-				console.log(checkbox.prop('checked'));
-				( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
-			});
-		});
-	}
-});
+
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+    $('#fourth').parallax("50%", 0.3);
+
+})
+
+(function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+
+})(jQuery);

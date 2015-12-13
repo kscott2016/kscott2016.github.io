@@ -2,40 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery Parallax Plugin Demo</title>
+<title>Disney Villains!</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#nav').localScroll(800);
-	
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
-
-})
-
-(function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
-
-})(jQuery);
+<script type="text/javascript" src="scripts/main.js">
 
 </script>
+    
+
+    
 </head>
 
 <body>
@@ -50,83 +28,47 @@ $(document).ready(function(){
 		<div class="story">
 	    	<div class="float-right">
 			  
-                <ul class="cd-accordion-menu animated">
-		<li class="has-children">
-			<input type="checkbox" name ="group-1" id="group-1" checked>
-			<label for="group-1">Group 1</label>
+                <dl class="accordion">
 
-      		<ul>
-      			<li class="has-children">
-      				<input type="checkbox" name ="sub-group-1" id="sub-group-1">
-					<label for="sub-group-1">Sub Group 1</label>
+<dt><a href="">Scar's Bio</a></dt>
+<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
 
-					<ul>
-						<li><a href="#0">Image</a></li>
-						<li><a href="#0">Image</a></li>
-						<li><a href="#0">Image</a></li>
-					</ul>
-      			</li>
-      			<li class="has-children">
-      				<input type="checkbox" name ="sub-group-2" id="sub-group-2">
-					<label for="sub-group-2">Sub Group 2</label>
+<dt><a href="">Scar's Hyenas</a></dt>
+<dd>
+    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
+          <img height="100px" width="auto" src="images/bonzai.png"/>
+                               <img height="100px" width="auto" src="images/shenzi.png"/>
+                               <img height="100px" width="auto" src="images/ed.png"/>
+          </dd>
 
-					<ul>
-						<li class="has-children">
-							<input type="checkbox" name ="sub-group-level-3" id="sub-group-level-3">
-							<label for="sub-group-level-3">Sub Group Level 3</label>
+<dt><a href="">Listen to one of his lines</a></dt>
+<dd>
+    <audio id="audio" controls="controls">
+      Your browser does not support the ogg format.
+      <source src="Scar_Line.mp3" type="audio/mp3" />
+      <source src="Scar_Line.ogg" type="audio/ogg" />
+    </audio> 
+</dd>
 
-							<ul>
-								<li><a href="#0">Image</a></li>
-								<li><a href="#0">Image</a></li>
-							</ul>
-						</li>
-						<li><a href="#0">Image</a></li>
-					</ul>
-      			</li>
-      			<li><a href="#0">Image</a></li>
-				<li><a href="#0">Image</a></li>
-      		</ul>
-		</li>
+<dt><a href="">Scar's Song</a></dt>
+<dd>
+                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A34nxgXFCPzDphUJGuRsn10" width="400" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
+  
+<!--<dt><a href="">Change Background Image</a></dt>
+<dd>
+    <button id="change_image" > Click to change</button>
+                            </dd> -->                               
+                            
+<dt><a href="">Facts</a></dt>
+<dd>
+    <ul>
+        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
+        <li>Scar's birth name Taka is the Swahili word for "want".</li>
+        <li>He is a primary member of the <a href="http://disney.wikia.com/wiki/Disney_Villains"> Disney Villains</a> franchise.</li>
+    </ul>
+                            </dd>            
 
-		<li class="has-children">
-			<input type="checkbox" name ="group-2" id="group-2">
-			<label for="group-2">Group 2</label>
-
-			<ul>
-				<li><a href="#0">Image</a></li>
-				<li><a href="#0">Image</a></li>
-			</ul>
-		</li>
-
-		<li class="has-children">
-			<input type="checkbox" name ="group-3" id="group-3">
-			<label for="group-3">Group 3</label>
-
-			<ul>
-				<li><a href="#0">Image</a></li>
-				<li><a href="#0">Image</a></li>
-			</ul>
-		</li>
-
-		<li class="has-children">
-			<input type="checkbox" name ="group-4" id="group-4">
-			<label for="group-4">Group 4</label>
-
-			<ul>
-				<li class="has-children">
-					<input type="checkbox" name ="sub-group-3" id="sub-group-3">
-					<label for="sub-group-3">Sub Group 3</label>
-
-					<ul>
-						<li><a href="#0">Image</a></li>
-						<li><a href="#0">Image</a></li>
-					</ul>
-				</li>
-				<li><a href="#0">Image</a></li>
-				<li><a href="#0">Image</a></li>
-			</ul>
-		</li>
-	</ul> <!-- cd-accordion-menu -->
+</dl>
                 
 	        </div>
 	    </div> <!--.story-->
@@ -160,7 +102,22 @@ $(document).ready(function(){
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#third-->
-	<script src="js/jquery-2.1.4.js"></script>
-<script src="scripts/main.js"></script> <!-- Resource jQuery -->
+
+    <script>
+    (function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+
+})(jQuery);
+    
+    </script>
+   
+ 
 </body>
 </html>
