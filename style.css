@@ -90,7 +90,7 @@ h2{
 }
 
 #second{
-	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	background: url(images/cruella_background.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1300px;
 	margin: 0 auto;
@@ -118,8 +118,8 @@ h2{
 	z-index: 200;
 }
 
-#fourth_slide .bg{
-	background:url(https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi_wfq3otjJAhVDVyYKHYZOCO8QjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPuppy&psig=AFQjCNF7gsTow10evvXtPUhdv52RfZ7grg&ust=1450076601977386) 50% 0 no-repeat fixed;
+#fourth_slide{
+	background:url(images/jafar_background.jpg) 50% 0 no-repeat fixed;
 	height: 1300px;
 	margin: 0 auto;
 	padding: 0;
@@ -129,7 +129,7 @@ h2{
 }
 
 #third{
-	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
+	background: url(images/maleficent_background.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1300px;
 	padding: 100px 0 0 0;	
