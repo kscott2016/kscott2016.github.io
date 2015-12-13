@@ -119,7 +119,7 @@ h2{
 }
 
 #fourth_slide .bg{
-	background: url('images/background2.jpg') 50% 0 no-repeat fixed;
+	background: url(images/jafar_background.jpg) 50% 0 no-repeat fixed;
 	height: 1300px;
 	margin: 0 auto;
 	padding: 0;
