@@ -354,16 +354,16 @@ dt{
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/Scar_background.jpg')}
 #slide-1 .hsContent {
-	bottom: 100px;
-	top: 275px;
-    text-align: right;
+	bottom: 200px;
+	top: auto;
+    /*text-align: right;*/
 }
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/cruella_background.jpg')}
 #slide-2 .hsContent {
 	margin-left: -450px;
-	bottom: 100px;
+	bottom: 200px;
 	top: auto;
 }
 #slide-2 h2{
@@ -375,8 +375,8 @@ dt{
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/maleficent_background.jpg')}
 #slide-3 .hsContent {
-	/*margin-left: 00px;*/
-    top:350px;
+	margin-left: -239px;
+    top:auto;
 }
 	#slide-3 h2 {
 		color: #f2ead6;
@@ -386,8 +386,8 @@ dt{
 /* Slide 4 */
 #slide-4 .bcg {background-image:url('../img/jafar_background.jpg')}
 #slide-4 .hsContent {
-	margin-left: -600px;
-    top:250px;
+	margin-left: -450px;
+    
 }
 	#slide-4 h2 {
 		/*background: none;*/
