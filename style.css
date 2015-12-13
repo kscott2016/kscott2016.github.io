@@ -108,6 +108,26 @@ h2{
 	z-index: 200;
 }
 
+#third_slide .bg{
+	background: url(images/jafar_background.jpg) 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}
+
+#fourth_slide .bg{
+	background: url('images/background2.jpg') 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}
+
 #third{
 	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
 	color: white;
