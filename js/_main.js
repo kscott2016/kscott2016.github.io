@@ -8,68 +8,6 @@
  * Article URL: http://ihatetomatoes.net/simple-parallax-scrolling-tutorial/
  */
 
-//Init Skrollr
-
-var s=skrollr.init();
-
-//Refresh Skrollr after resizing sections
-s.refresh($('.homeSlide'));
-
-/*$(document).ready(function(){
-    $("button").click(function(){
-        $("p").toggle();
-    });
-    
-     $("button").click(function(){
-        $("#minion").toggle();
-    });
-    
-    //$("#minion").toggle();
-      //  $("#audio").toggle();
-    
-});*/
-
-
-
-
-(function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
-
-})(jQuery);
-
-$("#change_image").on("click", function () {
-    $(this).css("section#slide-1.homeSlide", "url(../img/background2.jpg)");
-});
-
-
- $("#bio_button").click(function(){
-     
-        
-        $("#bio").toggle('fast');
-        
-    });
-
-$("#minion_button").click(function(){
-        $("#minion").toggle('fast');
-    });
-
-$("#voice_button").click(function(){
-        $("#voice").toggle('fast');
-    });
-
-$("#song_button").click(function(){
-        $("#song").toggle('fast');
-    });
-
-
-
 ( function( $ ) {
 	
 	// Setup variables
