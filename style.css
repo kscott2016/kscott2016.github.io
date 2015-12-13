@@ -108,28 +108,16 @@ h2{
 	z-index: 200;
 }
 
-#third_slide .bg{
-	background: url(images/jafar_background.jpg) 50% 0 no-repeat fixed;
-	height: 1300px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 900px;
-	z-index: 200;
-}
-
-#fourth_slide{
-	background:url(images/jafar_background.jpg) 50% 0 no-repeat fixed;
-	height: 1300px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 900px;
-	z-index: 200;
-}
 
 #third{
 	background: url(images/maleficent_background.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+	padding: 100px 0 0 0;	
+}
+
+#fourth{
+	background: url(images/jafar_background.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1300px;
 	padding: 100px 0 0 0;	
