@@ -6,15 +6,22 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Disney Villains!</title>
+        <title>Demo - Simple parallax scrolling tutorial</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-         <script type="text/javascript" src="javascript/jquery.cookie.js"></script> <!--required only if using cookies-->
-    <script type="text/javascript" src="javascript/jquery.accordion.js"></script>
+
 		<link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
 
-      
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!--
+			* This demo was prepared for you by Petr Tichy - Ihatetomatoes.net
+			* Want to see more similar demos and tutorials?
+			* Help by spreading the word about Ihatetomatoes blog.
+			* Facebook - https://www.facebook.com/ihatetomatoesblog
+			* Twitter - https://twitter.com/ihatetomatoes
+			* Google+ - https://plus.google.com/u/0/109859280204979591787/about
+		-->
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -29,259 +36,41 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        
-       <!-- <div id="nav_bar">
-        
-        <span>
-            <ul>
-                <li><a class="nav_item" href="index.html">Home</a></li>
-                <li><a class="nav_item" href="scar.html">Scar</a></li>
-                <li><a class="nav_item" href="cruella.html">Cruella</a></li>
-                <li><a class="nav_item"  href="maleficient.html">Maleficient</a></li>
-                <li><a class="nav_item"  href="jafar.html">Jafar</a></li>
-                
-            </ul>
-            </span>
-        
-        </div>-->
        	
        	<div id="preload">
-            
-	       	<!--<img src="img/bcg_slide-1.jpg">
+	       	<img src="img/bcg_slide-1.jpg">
 	       	<img src="img/bcg_slide-2.jpg">
 	       	<img src="img/bcg_slide-3.jpg">
-	       	<img src="img/bcg_slide-4.jpg">-->
-            <img src="img/Scar_background.jpg">
-            <img src="img/cruella_background.jpg">
-            <img src="img/maleficent_background.jpg">
-            <img src="img/jafar_background.jpg">
+	       	<img src="img/bcg_slide-4.jpg">
        	</div>
        	
        	<main>
        	 
 	        <section id="slide-1" class="homeSlide">
-	        	<div class="bcg"
-                     data-center="background-position: 50% 0px;"
-                     data-top-bottom="background-position: 50% -100px;"
-                     data-anchor-target="#slide-1">
-                    
-		        	<div align="right" class="hsContainer">
-                        
-                        <img class="scar_name" src="img/Scar_name.png" width="400px" height="auto" />
-                        <img class="smoke" src="img/smokerising2.gif"/>
-                        
-                      
-                               
-                
-                        
-                        
-			    		<div class="hsContent"
-                             data-center="bottom: 200px; opacity: 1"
-                data-top="bottom: 1200px; opacity: 0"
-                data-anchor-target="#slide-1 h2">
-                            <div id="Scar_box"  class="box">
-                            <h2 align="center">Long live the king</h2> 
-                             
-                   
-      <dl class="accordion" align="center">
-
-<dt><a href="">Scar's Bio</a></dt>
-<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
-
-<dt><a href="">Scar's Hyenas</a></dt>
-<dd>
-    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
-          <img height="100px" width="auto" src="img/bonzai.png"/>
-                               <img height="100px" width="auto" src="img/shenzi.png"/>
-                               <img height="100px" width="auto" src="img/ed.png"/>
-          </dd>
-
-<dt><a href="">Listen to one of his lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Scar_Line.mp3" type="audio/mp3" />
-      <source src="Scar_Line.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Scar's Song</a></dt>
-<dd>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A34nxgXFCPzDphUJGuRsn10" width="400" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
-        <li>Scar's birth name Taka is the Swahili word for "want".</li>
-        <li>He is a primary member of the <a href="http://disney.wikia.com/wiki/Disney_Villains"> Disney Villains</a> franchise.</li>
-    </ul>
-                            </dd>                            
-                            
-
-</dl>         
-                                
-                                
-                           <!-- ORIGINAL BUTTONS
-<button id="bio_button"> Read Scar's bio <div id="bio" ><p>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</p></div></button>
-                           <button id="minion_button" >  Meet his hyenas
-                               <div id="minion" display="none">
-                               <img height="50px" width="auto" src="img/bonzai.png"/>
-                               <img height="50px" width="auto" src="img/shenzi.png"/>
-                               <img height="50px" width="auto" src="img/ed.png"/></div>
-                                   </button>
-                                  <button id=voice_button>Hear one of his lines 
-                                   <div id=voice>
-                                         <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Scar_Line.mp3" type="audio/mp3" />
-      <source src="Scar_Line.ogg" type="audio/ogg" />
-    </audio> 
-                                       </div></button> 
-                               
-                                   
-                                <button id="song_button"> Hear one of his songs <div id="song"><iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A34nxgXFCPzDphUJGuRsn10" width="100" height="auto" frameborder="0" allowtransparency="true"></iframe>
-                                    </div>
-                                </button>-->
-                             
-                                   
-                               
-                            
-                            </div>
-                           
+	        	<div class="bcg">
+		        	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2>Simple parallax scrolling is...</h2>
 			    		</div>
 		        	</div>
 	        	</div>
 		    </section>
 		    
 		    <section id="slide-2" class="homeSlide">
-		    	<div class="bcg"
-                        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-2"
-                     >
+		    	<div class="bcg">
 			    	<div class="hsContainer">
-                         <img class="cruella_name" src="img/Cruella_name.png" width="400px" height="auto" />
-			    		<div class="hsContent"
-                             data-center="opacity: 1"
-                data-center-top="opacity: 0"
-                data--100-bottom="opacity: 0;"
-                data-anchor-target="#slide-2"
-                             >
-                            <div id="Cruella_box" class="box">
-				    		<h2 align="center">If she doesn't scare you, no evil thing will.</h2>
-                            
-                                  <dl class="accordion" align="center">
-
-<dt><a href="">Cruella's Bio</a></dt>
-<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
-
-<dt><a href="">Cruella's Henchmen</a></dt>
-<dd>
-    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
-          <img height="100px" width="auto" src="img/jasper.png">
-                                <img height="100px" width="auto" src="img/horace.png">
-          </dd>
-
-<dt><a href="">Listen to one of her lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Cruella_Line.mp3" type="audio/mp3" />
-      <source src="Cruella_Line.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Cruella's Song</a></dt>
-<dd>
-                           <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A2tkIIkF3CPqsmYhsncNEGN" width="400" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
-        <li>Scar's birth name Taka is the Swahili word for "want".</li>
-        <li>He is a primary member of the <a href="http://disney.wikia.com/wiki/Disney_Villains"> Disney Villains</a> franchise.</li>
-    </ul>
-                            </dd>                            
-                            
-
-</dl>  
-                        </div>
+			    		<div class="hsContent">
+				    		<h2>great for story telling websites.</h2>
 			    		</div>
 		        	</div>
 		    	</div>
 		    </section>
 		    
 			<section id="slide-3" class="homeSlide">
-				<div class="bcg"
-                     data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-3">
+				<div class="bcg">
 			    	<div class="hsContainer">
-                        <img class="maleficient_name" src="img/Maleficient_name.png" width="500px" height="auto" />
-		    			<div class="hsContent"
-                             data--50-bottom="opacity: 0;"
-                data--200-bottom="opacity: 1;"
-                data-center="opacity: 1"
-                data-200-top="opacity: 0"
-                data-anchor-target="#slide-3 h2">
-                            <div id="Maleficient_box" class="box">
-				    		<h2 align="center"><a href="maleficient.html">She's the Mistress of all Evil</h2>
-                                <dl class="accordion" align="center">
-
-<dt><a href="">Maleficient's Bio</a></dt>
-<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
-
-<dt><a href="">Maleficient's Goons</a></dt>
-<dd>
-    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
-          <img height="100px" width="auto" src="img/goon.png"/>
-                                <img height="100px" width="auto" src="img/diablo.png"/>
-          </dd>
-
-<dt><a href="">Listen to one of her lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Maleficient.mp3" type="audio/mp3" />
-      <source src="Maleficient.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Maleficient's Song</a></dt>
-<dd>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3liiZRlJxa8GeLUgWMoIeu" width="400" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
-        <li>Scar's birth name Taka is the Swahili word for "want".</li>
-        <li>He is a primary member of the <a href="http://disney.wikia.com/wiki/Disney_Villains"> Disney Villains</a> franchise.</li>
-    </ul>
-                            </dd>                            
-                            
-
-</dl>         
-                            </div>
+		    			<div class="hsContent">
+				    		<h2>Now go and create your own story</h2>
 			    		</div>
 			    	</div>
 			    	
@@ -291,52 +80,8 @@
 			<section id="slide-4" class="homeSlide">
 				<div class="bcg">
 			    	<div class="hsContainer">
-                        <img class="jafar_name" src="img/Jafar_name.png" width="500px" height="auto" />
 		    			<div class="hsContent">
-                            <div id="Jafar_box" class="box">
-				    		<h2 align="center"><a href="jafar.com">To him, you're only second                                        rate</h2>
-                            <dl class="accordion" align="center">
-
-<dt><a href="">Jafar's Bio</a></dt>
-<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
-
-<dt><a href="">Jafar's Sidekick</a></dt>
-<dd>
-    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
-          <img height="100px" width="auto" src="img/iago.png"/>
-                               
-          </dd>
-
-<dt><a href="">Listen to one of his lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Jafar_Line.mp3" type="audio/mp3" />
-      <source src="Jafar_Line.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Jafar's Song</a></dt>
-<dd>
-                           <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A5BEItY9of9nR4zj51JO0jU" width="400" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
-        <li>Scar's birth name Taka is the Swahili word for "want".</li>
-        <li>He is a primary member of the <a href="http://disney.wikia.com/wiki/Disney_Villains"> Disney Villains</a> franchise.</li>
-    </ul>
-                            </dd>                            
-                            
-
-</dl>         
-                            </div>
+				    		<h2>and share mine.</h2>
 			    		</div>
 			    	</div>
 			    	
