@@ -10,6 +10,13 @@ $(document).ready(function(){
 	
 });
 
+// Init Skrollr
+var s = skrollr.init();
+ 
+// Refresh Skrollr after resizing our sections
+s.refresh($('.homeSlide'));
+
+
 function init() {
 	
 	// start up after 2sec no matter what
