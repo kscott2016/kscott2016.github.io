@@ -140,7 +140,7 @@ h2{
 	overflow: auto;
 	width: 980px;
     font-size: 20px;
-    font-family: 'Cinzel Decorative', cursive;
+    
     
     
 }
@@ -152,7 +152,55 @@ h2{
     
 }
 
-a{
-    text-decoration: none;
+.accordion {
+   margin: 50px;
+    
+    dt, a{
+        font-family: 'Cinzel Decorative', cursive;
+    }
+   dt, dd {
+      padding: 20px;
+      border: 1px solid black;
+      border-bottom: 0; 
+      &:last-of-type {
+        border-bottom: 1px solid black; 
+      }
+      a {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 10; 
+     font-size: 12px;
+     &:last-of-type {
+       border-top: 1px solid white;
+       position: relative;
+       top: -1px;
+         font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+     }
+  
+  }
+}
+a {
+  text-decoration: none;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 30px;
+    
+}
+
+audio{
+ 
+    width:250px;
+    height:auto;
+    
+}
+
+h3,Scar_quote{
+    
+    font-family: 'Cinzel Decorative', cursive;
+    color: yellow;
+    
 }
 
