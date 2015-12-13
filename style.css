@@ -45,8 +45,9 @@ h1, #pixels{
 }
 
 h2{
-	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
-	font-size-adjust:0.531;
+	font-family: 'Metal Mania', cursive;
+	/*font-size-adjust:0.531;*/
+    font-size:75px;
 	font-weight:500;
 	font-style:normal;
 }
@@ -206,11 +207,21 @@ h3,.Scar_quote{
     
 }
 
+.Scar_name{
+
+   color: yellow; 
+}
+
 h3,.Cruella_quote{
     
     font-family: 'Cinzel Decorative', cursive;
     color: white;
     
+}
+
+.Cruella_name{
+
+   color: white; 
 }
 
 h3,.Maleficient_quote{
@@ -220,11 +231,21 @@ h3,.Maleficient_quote{
     
 }
 
+.Maleficient_name{
+
+   color: limegreen; 
+}
+
 h3,.Jafar_quote{
     
     font-family: 'Cinzel Decorative', cursive;
     color: firebrick;
     
+}
+
+.Jafar_name{
+
+   color: firebrick; 
 }
 
 .jafar_list{
