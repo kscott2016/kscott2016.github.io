@@ -22,6 +22,19 @@ $(document).ready(function(){
 	$('#third').parallax("50%", 0.3);
 
 })
+
+(function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+
+})(jQuery);
+
 </script>
 </head>
 
@@ -35,16 +48,56 @@ $(document).ready(function(){
 	
 	<div id="intro">
 		<div class="story">
-	    	<div class="float-left">
-			<h2>(Almost) Static Background</h2>
-	        <p>This section has a background that moves slightly slower than the user scrolls. This is achieved by changing the top position of the background for every pixel the page is scrolled.</p>
+	    	<div class="float-right">
+			<dl class="accordion" align="center">
+
+<dt><a href="">Scar's Bio</a></dt>
+<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
+
+<dt><a href="">Scar's Hyenas</a></dt>
+<dd>
+    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
+          <img height="100px" width="auto" src="img/bonzai.png"/>
+                               <img height="100px" width="auto" src="img/shenzi.png"/>
+                               <img height="100px" width="auto" src="img/ed.png"/>
+          </dd>
+
+<dt><a href="">Listen to one of his lines</a></dt>
+<dd>
+    <audio id="audio" controls="controls">
+      Your browser does not support the ogg format.
+      <source src="Scar_Line.mp3" type="audio/mp3" />
+      <source src="Scar_Line.ogg" type="audio/ogg" />
+    </audio> 
+</dd>
+
+<dt><a href="">Scar's Song</a></dt>
+<dd>
+                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A34nxgXFCPzDphUJGuRsn10" width="400" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
+  
+<!--<dt><a href="">Change Background Image</a></dt>
+<dd>
+    <button id="change_image" > Click to change</button>
+                            </dd> -->                               
+                            
+<dt><a href="">Facts</a></dt>
+<dd>
+    <ul>
+        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
+        <li>Scar's birth name Taka is the Swahili word for "want".</li>
+        <li>He is a primary member of the <a href="http://disney.wikia.com/wiki/Disney_Villains"> Disney Villains</a> franchise.</li>
+    </ul>
+                            </dd>                            
+                            
+
+</dl>         
 	        </div>
 	    </div> <!--.story-->
 	</div> <!--#intro-->
 	
 	<div id="second">
 		<div class="story"><div class="bg"></div>
-	    	<div class="float-right">
+	    	<div class="float-left">
 	            <h2>Multiple Backgrounds</h2>
 	            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
@@ -55,7 +108,7 @@ $(document).ready(function(){
 	
 	<div id="third">
 		<div class="story">
-	    	<div class="float-left">
+	    	<div class="float-right">
 	        	<h2>What Happens When JavaScript is Disabled?</h2>
 	            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
 	        </div>

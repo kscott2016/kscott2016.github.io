@@ -12,6 +12,10 @@ License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike
 @charset "utf-8";
 /* CSS Document */
 
+@import url(https://fonts.googleapis.com/css?family=Metal+Mania);
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds);
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative);
+
 body{
 	margin: 0;
 	min-width: 980px;
@@ -141,4 +145,36 @@ h2{
 	padding: 100px 0 0 0;
 	position: relative;
 	width: 350px;	
+}
+
+.accordion {
+   margin: 20px;   
+   dt, dd {
+      padding: 10px;
+      border: 1px solid black;
+      border-bottom: 0; 
+      &:last-of-type {
+        border-bottom: 1px solid black; 
+      }
+      a {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 0; 
+     font-size: 12px;
+     &:last-of-type {
+       border-top: 1px solid white;
+       position: relative;
+       top: -1px;
+     }
+  }
+}
+
+dt{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 16pt;
+    font-weight: bold;
 }
