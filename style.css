@@ -140,6 +140,7 @@ h2{
 	overflow: auto;
 	width: 980px;
     font-size: 20px;
+    font-family:"Proxima Nova Light";
     
     
     
@@ -149,7 +150,7 @@ h2{
 	padding: 100px 0 0 0;
 	position: relative;
 	width: 350px;	
-    
+    font-family:"Proxima Nova Light";
 }
 
 .accordion {
@@ -178,7 +179,7 @@ h2{
        border-top: 1px solid white;
        position: relative;
        top: -1px;
-         font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+         font-family:"Proxima Nova Light";
      }
   
   }
@@ -187,6 +188,7 @@ a {
   text-decoration: none;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 30px;
+    color: white;
     
 }
 
@@ -197,10 +199,46 @@ audio{
     
 }
 
-h3,Scar_quote{
+h3,.Scar_quote{
     
     font-family: 'Cinzel Decorative', cursive;
     color: yellow;
     
 }
 
+h3,.Cruella_quote{
+    
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    
+}
+
+h3,.Maleficient_quote{
+    
+    font-family: 'Cinzel Decorative', cursive;
+    color: limegreen;
+    
+}
+
+h3,.Jafar_quote{
+    
+    font-family: 'Cinzel Decorative', cursive;
+    color: firebrick;
+    
+}
+
+.jafar_list{
+    color: firebrick;
+}
+
+a.jafar_list{
+    
+}
+
+ul{
+    font-family:"Proxima Nova Light";
+}
+
+body{
+    font-family:"Proxima Nova Light";
+}
