@@ -47,7 +47,7 @@ h1, #pixels{
 h2{
 	font-family: 'Metal Mania', cursive;
 	/*font-size-adjust:0.531;*/
-    font-size:75px;
+    font-size:100px;
 	font-weight:500;
 	font-style:normal;
 }
@@ -103,14 +103,57 @@ h2{
 	padding: 0;
 }
 
-#second .bg{
-	background: url(images/trainers.png) 50% 0 no-repeat fixed;
+#intro .bg{
+	background: url(images/smoke1.svg) 50% 0 no-repeat fixed;
+    background-size: 400px auto;
 	height: 1300px;
 	margin: 0 auto;
 	padding: 0;
 	position: absolute;
 	width: 900px;
 	z-index: 200;
+}
+
+#trigger .smoke{
+    background: url(images/smoke1.svg);
+    position: 75px,100px;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 400;
+    
+}
+
+#intro .smoke2{
+    background: url(images/smoke2.svg) 50% 70% no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+    
+	z-index: 400;
+    
+}
+
+.gif_box{
+    positon:relative;
+    height: 610px;
+    width:auto;
+    float: right;
+    
+    
+}
+.gif{
+ 
+    
+    clear: both;
+    height:0px;
+    width: auto;
+    float: right;
+    position:relative;
 }
 
 
@@ -152,6 +195,7 @@ h2{
 	position: relative;
 	width: 350px;	
     font-family:"Proxima Nova Light";
+    clear: both;
 }
 
 .accordion {

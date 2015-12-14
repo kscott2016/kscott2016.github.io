@@ -11,6 +11,25 @@
 <script type="text/javascript" src="scripts/main.js">
 
 </script>
+    <script src="scripts/greensock/TweenMax.min.jsTweenMax.min.js"></script>
+<script src="scripts/jquery.min.js"></script>
+<!-- should be replaced with minified version when development is finished -->
+<script src="scripts/scrollmagic/minified/ScrollMagic.min.js"></script>
+<!-- should be removed when development is finished -->
+<script src="scripts/scrollmagic/minified/plugins/to/js/jquery.scrollmagic.debug.js"></script>
+<script>
+   // this is where our code will go
+    
+    // init controller
+						var controller = new ScrollMagic.Controller();
+
+						// build scene
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+										// trigger a velocity opaticy animation
+										.setVelocity("#animate", {opacity: 0}, {duration: 400})
+										.addIndicators() // add indicators (requires plugin)
+										.addTo(controller);
+</script>
     
 
     
@@ -24,10 +43,12 @@
 	    <li><a href="#fourth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
 	</ul>
 	
-	<div id="intro">
+	<div id="intro"> 
+        
 		<div class="story">
 	    	<div class="float-right">
-			  <h2 class="Scar_name">Scar</h2>
+			  <h2 class="Scar_name" >Scar</h2>
+                
                 <h3 class="Scar_quote">Long Live the King</h3>
                 <dl class="accordion">
 
@@ -72,13 +93,14 @@
                             </dd>            
 
 </dl>
-                
+               
 	        </div>
+     
 	    </div> <!--.story-->
 	</div> <!--#intro-->
 	
 	<div id="second">
-		<div class="story"><!--<div class="bg"></div>-->
+		<div class="story">
 	    	<div class="float-left">
 	            <h2 class="Cruella_name">Cruella</h2>
 	           <h3 class="Cruella_quote">If she doesn't scare you, no evil thing will</h3>
