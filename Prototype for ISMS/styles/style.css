@@ -194,6 +194,11 @@ article.accordion section h2 a
 	outline: 0 none;
 }
 
+h3.instructions{
+    color:white;
+    padding: 10px;
+}
+
 article.accordion section:target
 {
 	width: 75%;
