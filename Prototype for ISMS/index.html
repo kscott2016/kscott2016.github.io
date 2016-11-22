@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us-ISMS </title>
+<link rel="stylesheet" type=text/css href="styles/style.css">
+        <script src="script/jquery-3.1.1.min.js" type=text/javascript></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <script>
+        $(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pauseOnHover: true,
+    interval: 7000,
+  });
+    });
+        </script>
+        <script>
+            
+            
+/*sub menu*/
+            
+     $(document).ready(function(){
+ 
+    activePanel = $("#accordion div.panel:first");
+    $(activePanel).addClass('active');
+ 
+    $("#accordion").delegate('.panel', 'click', function(e){
+        if( ! $(this).is('.active') ){
+			$(activePanel).animate({width: "44px"}, 300);
+			$(this).animate({width: "848px"}, 300);
+			$('#accordion .panel').removeClass('active');
+			$(this).addClass('active');
+			activePanel = this;
+		 };
+    });
+});
+    </script>
+</head>
+<body>
+    
+    <div id="top-section">
+        <span>
+           <a href="">Become a member</a>
+            <a href="">Sign In</a>
+        </span>
+    </div>
+    <div id="navigation">
+        <nav class="navbar">
+         <img id=logo src="img/ISMS-logo.png"/>
+            <ul>
+                <li><a href=index.html class="about">About Us</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833">Membership</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559">Media</a></li>
+                <li><a href="https://www.isms.org/Education/ISMS_Education_Center/">Education</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506">Governmental Affairs</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230">Resources</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+<div class="container-fluid">
+    
+
+    
+    <div id=content>
+        
+        <div class="row row-eq-height" id="mission-history">
+            <div class="col-md-6" >
+        
+            
+            <h3>Mission</h3>
+            <p>The Illinois State Medical Society is a professional organization that represents and unifies its physician members as they practice the science and art of medicine. The Society represents the interests of member physicians, advocates for patients and promotes the doctor/patient relationship, the ethical practice of medicine, and the betterment of the public health.
+            </p>
+        
+            </div>
+             <div class="col-md-6" id="mission">
+        
+            <h3>History</h3>
+            <p>In Springfield, Illinois, June of 1840, 12 physicians and surgeons of the State of Illinois assembled to make preliminary arrangements for the organization of the Illinois State Medical Society. These physicians were concerned with the solution of ethical, scientific, legislative and economic problems plaguing physicians. From this embryonic beginning, ISMS has grown into the leading advocate of Illinois physicians and patients. Since its inception, ISMS membership has represented the overwhelming majority of Illinois physicians statewide, from all specialties and practice types.
+            </p>
+        
+            </div>
+        </div>
+        
+        <div id=reviews class="row row-eq-height">
+            <div class="col-md-6 img-box">
+                <img src="img/31ba649.png"/><img src="img/doctors-990x450.jpg"/>           
+            </div>
+            <!--Reviews Slider-->
+            <div class="col-md-6  ">
+                <h3>We're dedicated to providing the best care and support to all of our members. Below are some reviews from our current members. </h3>
+             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+              <img class=" center-block img-circle" src="img/review1.jpg" style="width: 200px;height:200px;">
+                
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+            
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+              
+              <img class="center-block img-circle" src="img/review2.jpg" style="width: 200px;height:200px;">
+              
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+               
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Someone famous</small>
+                </div>
+              </div>
+            </blockquote>
+               <img class="center-block img-circle" src="img/review3.jpg" style="width: 200px;height:200px;">
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div> 
+            
+            </div>
+        </div>
+ 
+
+<div class="row ">
+             
+<div class="col-md-12" id="sub-menu">
+    
+    
+   
+    <article class="accordion">
+
+	<section id="acc1">
+		<h2><a href="#acc1">Code of Ethics</a></h2>
+		<header><strong>House of Delegates</strong>: The ISMS House of Delegates is the forum where direction for the ISMS is determined. Once a year, members of the ISMS House of Delegates come together to debate and vote upon resolutions which will set direction for the Society. The House is comprised of members elected by each county medical society. Every ISMS member has the right to make their voice heard in a meaningful way through the democratic process and elected county delegates. Resolutions adopted by the House as official ISMS policy are implemented and overseen by the ISMS Board of Trustees.</header>
+<div>
+<p><strong>Board of Trustees</strong>: The ISMS Board of Trustees is elected by members of the House of Delegates at the Society's annual meeting. The Board is charged with carrying forward the agenda established by the House of Delegates.</p>
+<p><strong>Member Councils and Committees</strong>: Councils and committees offer ISMS members an opportunity to become actively involved in the Society and in organized medicine at the state level. Through more than a dozen ISMS councils and committees, doctors express their views on topics affecting medicine and help direct ISMS actions.</p>
+<p>The county medical societies are the source of nominations for ISMS council and committee posts. Many physicians first get involved in committee work at the local level.</p>
+<p><strong>Membership Categories</strong>: There are several types of ISMS membership categories. ISMS members consist of Regular members, Group members, Emeritus members, Retired members, Service members, Distinguished members, In-training members and Student members. All members enjoy full rights and privileges, including the right to vote and hold office. <a title="Apply for membership today" href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=2147485052">Apply for membership today</a>.</p>
+<p><strong>Regular Members</strong>. Regular members shall be those physicians licensed to practice medicine in all its branches in the State of Illinois, who are either residents of the State of Illinois or who practice principally in Illinois, are persons of good moral character and professional standing and members of their ISMS component society.</p>
+<p>Members in good standing moving out of Illinois may retain membership (not to exceed one year) in the Illinois State Medical Society until they are accepted into membership in the medical society of the state to which they have moved.</p>
+<p>Physicians serving as full-time employees of the American Medical Association and other physicians licensed in one of the states or territories of the United States but not licensed in Illinois may become regular members although they are not actively engaged in the practice of medicine.</p>
+<p><strong>Group Members</strong>. Group members are those physicians practicing within a group eligible for and receiving a 15 percent reduction in dues as provided for in the ISMS bylaws, with group defined as the provision of health care services by physicians who are formally organized as a legal entity in which business and clinical facilities, records and personnel are shared; income from medical services provided by the group are treated as receipts of the group and distributed according to some prearranged plan.</p>
+<p><strong>Emeritus Members</strong>. Emeritus members are those who have been regular members in good standing for 35 years and have reached or will have reached the age of 70 before the next fiscal year of the Society, have made written application which is received by their component society prior to December 31 and have been recommended by their component society for emeritus status. Such membership shall be effective January first of the year following election. Credit for membership in other American Medical Association constituent societies shall be accorded transferees, provided they have been members of the Society for at least five years.</p>
+<p><strong>Retired Members</strong>. Retired members shall consist of those who have been regular members and who by reason of age or incapacity have retired from active practice and who upon application and recommendation from their component society have been made retired members. Retired status is not available to physicians who assume compensated positions in the health care field after retiring from medical practice.</p>
+<p><strong>Service Members</strong>. Physicians serving as medical officers in the United States Governmental Services, who are members of a component society, so long as they are engaged actively full-time in their respective service, and thereafter if they have been retired on account of age or physical disability, shall be elected to service membership.</p>
+<p><strong>Distinguished Members</strong>. Physicians of Illinois or other states or foreign countries who have risen to prominence in the profession, teachers of medicine or of the sciences allied to medicine, not eligible for regular membership, or members of associated arts and sciences, who have made significant contributions to medicine may be nominated by any member of the House of Delegates and may be elected by the House at any annual convention by a two-thirds affirmative vote of those present (credentialed). They shall not be considered as members in determining the number of delegates to the American Medical Association, but they may participate in all other society activities.</p>
+<p><strong>In-Training Members</strong>. In-training members are persons who are medical school graduates, of good moral character and professional standing and serving an internship or residency approved by the American Medical Association in the State of Illinois and are members of a component medical society. Membership shall end at the end of the year in which training is terminated. Following this, in-training members may apply for regular membership through their component society.</p>
+<p><strong>Student Members</strong>. Student members are those who are currently enrolled in an Illinois medical school or are Illinois residents enrolled in an approved medical school within the boundaries of the United States, are of good moral character, professional and academic standing and student members of a component society.</p>
+<p>Please contact <a href="mailto:membership@isms.org">membership@isms.org</a> for dues information.</p>
+</div>
+	</section>
+	
+	<section id="acc2">
+		<h2><a href="#acc2">Society Structure</a></h2>
+		<p><strong>House of Delegates</strong>: The ISMS House of Delegates is the forum where direction for the ISMS is determined. Once a year, members of the ISMS House of Delegates come together to debate and vote upon resolutions which will set direction for the Society. The House is comprised of members elected by each county medical society. Every ISMS member has the right to make their voice heard in a meaningful way through the democratic process and elected county delegates. Resolutions adopted by the House as official ISMS policy are implemented and overseen by the ISMS Board of Trustees.</p>
+<p><strong>Board of Trustees</strong>: The ISMS Board of Trustees is elected by members of the House of Delegates at the Society's annual meeting. The Board is charged with carrying forward the agenda established by the House of Delegates.</p>
+<p><strong>Member Councils and Committees</strong>: Councils and committees offer ISMS members an opportunity to become actively involved in the Society and in organized medicine at the state level. Through more than a dozen ISMS councils and committees, doctors express their views on topics affecting medicine and help direct ISMS actions.</p>
+<p>The county medical societies are the source of nominations for ISMS council and committee posts. Many physicians first get involved in committee work at the local level.</p>
+<p><strong>Membership Categories</strong>: There are several types of ISMS membership categories. ISMS members consist of Regular members, Group members, Emeritus members, Retired members, Service members, Distinguished members, In-training members and Student members. All members enjoy full rights and privileges, including the right to vote and hold office. <a title="Apply for membership today" href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=2147485052">Apply for membership today</a>.</p>
+<p><strong>Regular Members</strong>. Regular members shall be those physicians licensed to practice medicine in all its branches in the State of Illinois, who are either residents of the State of Illinois or who practice principally in Illinois, are persons of good moral character and professional standing and members of their ISMS component society.</p>
+<p>Members in good standing moving out of Illinois may retain membership (not to exceed one year) in the Illinois State Medical Society until they are accepted into membership in the medical society of the state to which they have moved.</p>
+<p>Physicians serving as full-time employees of the American Medical Association and other physicians licensed in one of the states or territories of the United States but not licensed in Illinois may become regular members although they are not actively engaged in the practice of medicine.</p>
+<p><strong>Group Members</strong>. Group members are those physicians practicing within a group eligible for and receiving a 15 percent reduction in dues as provided for in the ISMS bylaws, with group defined as the provision of health care services by physicians who are formally organized as a legal entity in which business and clinical facilities, records and personnel are shared; income from medical services provided by the group are treated as receipts of the group and distributed according to some prearranged plan.</p>
+<p><strong>Emeritus Members</strong>. Emeritus members are those who have been regular members in good standing for 35 years and have reached or will have reached the age of 70 before the next fiscal year of the Society, have made written application which is received by their component society prior to December 31 and have been recommended by their component society for emeritus status. Such membership shall be effective January first of the year following election. Credit for membership in other American Medical Association constituent societies shall be accorded transferees, provided they have been members of the Society for at least five years.</p>
+<p><strong>Retired Members</strong>. Retired members shall consist of those who have been regular members and who by reason of age or incapacity have retired from active practice and who upon application and recommendation from their component society have been made retired members. Retired status is not available to physicians who assume compensated positions in the health care field after retiring from medical practice.</p>
+<p><strong>Service Members</strong>. Physicians serving as medical officers in the United States Governmental Services, who are members of a component society, so long as they are engaged actively full-time in their respective service, and thereafter if they have been retired on account of age or physical disability, shall be elected to service membership.</p>
+<p><strong>Distinguished Members</strong>. Physicians of Illinois or other states or foreign countries who have risen to prominence in the profession, teachers of medicine or of the sciences allied to medicine, not eligible for regular membership, or members of associated arts and sciences, who have made significant contributions to medicine may be nominated by any member of the House of Delegates and may be elected by the House at any annual convention by a two-thirds affirmative vote of those present (credentialed). They shall not be considered as members in determining the number of delegates to the American Medical Association, but they may participate in all other society activities.</p>
+<p><strong>In-Training Members</strong>. In-training members are persons who are medical school graduates, of good moral character and professional standing and serving an internship or residency approved by the American Medical Association in the State of Illinois and are members of a component medical society. Membership shall end at the end of the year in which training is terminated. Following this, in-training members may apply for regular membership through their component society.</p>
+<p><strong>Student Members</strong>. Student members are those who are currently enrolled in an Illinois medical school or are Illinois residents enrolled in an approved medical school within the boundaries of the United States, are of good moral character, professional and academic standing and student members of a component society.</p>
+<p>Please contact <a href="mailto:membership@isms.org">membership@isms.org</a> for dues information.</p>
+	</section>
+	
+	<section id="acc3">
+		<h2><a href="#acc3">Officials Directory</a></h2>
+		
+	</section>
+	
+	<section id="acc4">
+		<h2><a href="#acc4">Councils and Committees</a></h2>
+		
+	</section>
+	
+	<section id="acc5">
+		<h2><a href="#acc5">Staff Directory</a></h2>
+		
+	</section>
+        
+    <section id="acc6">
+		<h2><a href="#acc6">ISMS Calendar</a></h2>
+		
+	</section>
+        
+    <section id="acc7">
+		<h2><a href="#acc7">Event Sponsorships</a></h2>
+		
+	</section>
+
+</article>
+    
+</div>
+    
+    
+    </div>
+ 
+</div>
+    </div>    
+    <footer>
+    <div class="row">
+        <div class="col-md-2">
+            <p><strong>Chicago Office</strong></p>
+            <p>
+            20 N. Michigan Ave., Ste. 700
+                Chicago, IL 60602
+                Phone: 312-782-1654
+                Toll Free: 800-782-4767
+                Fax: 312-782-2023
+                Email: info@isms.org
+            </p>
+        </div>
+         <div class="col-md-2">
+            <p><strong>Springfield Office</strong></p>
+            <p>
+                600 S. Second St., Ste. 200
+                Springfield, IL 62704
+                Phone: 217-528-5609
+                Toll Free: 800-782-4767
+                Fax: 312-782-2023
+                Email: info@isms.org
+            </p>
+        </div>
+        <div class="col-md-4">
+            <div class="social-media">
+            <h5>Follow Us on Social Media</h5>
+            <span>
+            <a href="https://www.facebook.com/pages/Illinois-State-Medical-Society/275256955849107"><img class="icons" src="img/facebook_icon.png"/></a><a href="http://twitter.com/illinoisdoctors"><img class="icons" src="img/twitter_icon.png"/></a><a href="http://www.linkedin.com/company/64179?trk=tyah"><img class="icons" src="img/linked_icon.png"/></a><a href="https://www.isms.org/core/images/icon-youtube.jpg"><img class="icons" src="img/youtube_icon.png"/></a>
+            </span>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <h5><u>Site Map</u></h5>
+            <ul>
+                <a href="index.html"><li>About Us</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833"><li>Membership</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559"><li>Media</li></a>
+                <a href="https://www.isms.org/Education/ISMS_Education_Center/"><li>Education</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506"><li>Governmental Affairs</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230"><li>Resources</li></a>
+            </ul>
+        </div>
+        </div>
+    
+    
+    </footer>
+    
+</body>    
+</html>
