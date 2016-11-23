@@ -1,306 +1,386 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Disney Villains!</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript" src="scripts/main.js">
-
-</script>
-    <script src="scripts/greensock/TweenMax.min.jsTweenMax.min.js"></script>
-<script src="scripts/jquery.min.js"></script>
-<!-- should be replaced with minified version when development is finished -->
-<script src="scripts/scrollmagic/minified/ScrollMagic.min.js"></script>
-<!-- should be removed when development is finished -->
-<script src="scripts/scrollmagic/minified/plugins/to/js/jquery.scrollmagic.debug.js"></script>
-<script>
-   // this is where our code will go
-    
-    // init controller
-						var controller = new ScrollMagic.Controller();
-
-						// build scene
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
-										// trigger a velocity opaticy animation
-										.setVelocity("#animate", {opacity: 0}, {duration: 400})
-										.addIndicators() // add indicators (requires plugin)
-										.addTo(controller);
-</script>
-    
-
-    
-</head>
-
-<body>
-	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	    <li><a href="#fourth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
-	</ul>
-	
-	<div id="intro"> 
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us-ISMS </title>
+<link rel="stylesheet" type=text/css href="styles/style.css">
+        <script src="script/jquery-3.1.1.min.js" type=text/javascript></script>
         
-		<div class="story">
-	    	<div class="float-right">
-			  <h2 class="Scar_name" >Scar</h2>
-                
-                <h3 class="Scar_quote">Long Live the King</h3>
-                <dl class="accordion">
-
-<dt><a href="">Scar's Bio</a></dt>
-<dd>Scar is the main antagonist of Disney's 1994 animated film, The Lion King.  He is the younger brother of Mufasa and uncle of Simba. He coveted his brother's position as King of the Pridelands. With his hyena henchmen, he killed Mufasa and attempted to kill Simba.</dd>
-
-<dt><a href="">Scar's Hyenas</a></dt>
-<dd>
-    Scar controls a group of hyenas to overthrow the Pridelands. The main 3 are Bonzai, Shenzi, and Ed.</br>
-                
-          <img height="100px" width="auto" src="images/bonzai.png"/>
-                               <img height="100px" width="auto" src="images/shenzi.png"/>
-                               <img height="100px" width="auto" src="images/ed.png"/>
-                    
-          </dd>
-
-<dt><a href="">Listen to one of his lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Scar_Line.mp3" type="audio/mp3" />
-      <source src="Scar_Line.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Scar's Song</a></dt>
-<dd>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A34nxgXFCPzDphUJGuRsn10" width="200" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>Jeremy Irons was his main voice actor. However, during the recording of "Be Prepared" his voice gave out after performing the "You won't get a sniff without me!" line. Jim Cummings perforemed </li>
-        <li>Scar's birth name Taka is the Swahili word for "want".</li>
-        <li>He is a primary member of the  Disney Villains franchise.</li>
-    </ul>
-                            </dd>            
-
-</dl>
-               
-	        </div>
-     
-	    </div> <!--.story-->
-	</div> <!--#intro-->
-	
-	<div id="second">
-		<div class="story">
-	    	<div class="float-left">
-	            <h2 class="Cruella_name">Cruella</h2>
-	           <h3 class="Cruella_quote">If she doesn't scare you, no evil thing will</h3>
-                <dl class="accordion">
-
-<dt><a href="">Cruella's Bio</a></dt>
-<dd>Cruella DeVil is the main antagonist from the 1961 animated movie, 101 Dalmations. She loves fashion and riches, but nothing tops her obcession with furs. She along with her two henchmen, Jasper and Horace, collect 99 dalmation puppies to make a fur coat.</dd>
-
-<dt><a href="">Cruella's Henchmen</a></dt>
-<dd>
-    Cruella hires 2 petty criminals Jasper and Horace to help her steal the puppies. Jasper considers himself the smarter one, but he actually falls for more traps than Horace. </br>
-                
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
-        <img height="100px" width="auto" src="images/jasper.png"/>
-                
-        <img height="100px" width="auto" src="images/horace.png"/>
-                
-                    
-          </dd>
-
-<dt><a href="">Listen to one of her lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Cruella_Line.mp3" type="audio/mp3" />
-      <source src="Cruella_Line.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Cruella's Song</a></dt>
-<dd>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A2tkIIkF3CPqsmYhsncNEGN" width="200" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>Betty Lou Gerson was her original voice actor. Susanne Blakeslee is her current voice actor. </li>
-        <li>Glenn Close portrayed in the 101 Dalmations live acttion film.</li>
-        <li>She was going to appear as the villain for The Rescuers (1977), but was replaced by Madame Medusa. However she did serve as inspiration for her replacement.</li>
-    </ul>
-                            </dd>            
-
-</dl>
-	        </div>
-	    </div> <!--.story-->
-	    
-	</div> <!--#second-->
-	
-	<div id="third">
-		<div class="story">
-	    	<div class="float-right">
-	        	<h2 class="Maleficient_name">Maleficient</h2>
-                 <h3 class="Maleficient_quote" align="center">She's the Mistress of all evil</h3>
-                <dl class="accordion">
-
-<dt><a href="">Maleficient's Bio</a></dt>
-<dd>Maleficient is an evil fairy and main antagonist from the 1959 animated movie, Sleeping Beauty.She is offened from not being invited to Princess Aurora's christening. She cursed Aurora, to prick her finger on a spinning wheel on her 16th birthday. She is an incarnation of pure evil.</dd>
-
-<dt><a href="">Maleficient's Goons</a></dt>
-<dd>
-    Diablo is her pet raven. He is extremely loyal to her and is the only competent in completing any tasks Maleficient gives him. </br>
-                
-            Her goons are a group of gargoyle like creatures. They seem to be extremely stupid. For the 16 years of Aurora's disappearance, they were searching for a baby.
-                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         
-        <img height="100px" width="auto" src="images/diablo.png"/>
-                
-        <img height="100px" width="auto" src="images/goon.png"/>
-                
-                    
-          </dd>
-
-<dt><a href="">Listen to one of her lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Maleficient.mp3" type="audio/mp3" />
-      <source src="Maleficient.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="">Maleficient's Song</a></dt>
-<dd>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A3liiZRlJxa8GeLUgWMoIeu" width="200" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="">Facts</a></dt>
-<dd>
-    <ul>
-        <li>She is voiced by Elanor Audley in the original movie. Sussanne Blankeselee is her current voice actor. </li>
-        <li>In the 2014 live action action film, Maleficient, she is the protagonist. Angelina Jolie portrayed her. </li>
-        <li>She is one of the few Disney characters to say "hell". </li>
-    </ul>
-                            </dd>            
-
-</dl>
-	            
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#third-->
-    
-    <div id="fourth">
-		<div class="story">
-	    	<div class="float-left">
-	        	<h2 class="Jafar_name">Jafar</h2>
-                 <h3 class="Jafar_quote" align="center">To him, you're only second rate</h3>
-                <dl class="accordion jafar_list">
-
-<dt><a href="" class="jafar_list">Jafar's Bio</a></dt>
-<dd>Jafar is the main antagonist of the 1992 animated film, Aladdin, and it's 1994 sequel. He was the Royal Vizier of Agrabah. He was portrayed as a psychopath who will destroy anyone who got in his way. </dd>
-
-<dt><a href="" class="jafar_list">Jafar's Sidekick</a></dt>
-<dd>
-    Iago is Jafar's sidekick. He served as Jafar's spy and diguised himself as a mindless pet parrot. He can speak perfect English. Iago helped Jafar steal the lamp from Aladdin. He was a protagonist for the rest of the Aladdin franchise.
-                
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        <img height="100px" width="auto" src="images/iago.png"/>
-                
-        
-                
-                    
-          </dd>
-
-<dt><a href="" class="jafar_list">Listen to one of his lines</a></dt>
-<dd>
-    <audio id="audio" controls="controls">
-      Your browser does not support the ogg format.
-      <source src="Jafar_Line.mp3" type="audio/mp3" />
-      <source src="Jafar_Line.ogg" type="audio/ogg" />
-    </audio> 
-</dd>
-
-<dt><a href="" class="jafar_list">Jafar's Song</a></dt>
-<dd>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A5BEItY9of9nR4zj51JO0jU" width="200" height="auto" frameborder="0" allowtransparency="true"></iframe></dd>
-  
-<!--<dt><a href="">Change Background Image</a></dt>
-<dd>
-    <button id="change_image" > Click to change</button>
-                            </dd> -->                               
-                            
-<dt><a href="" class="jafar_list">Facts</a></dt>
-<dd>
-    <ul>
-        <li>He is voiced by Johnathan Freeman. </li>
-        <li>He has a twin sister named Nasira. She was the main antagonist in the video game, Disney's Aladdin in Nasira's revenge. </li>
-        <li>In the original tale, he was Aladdin's uncle. </li>
-    </ul>
-                            </dd>            
-
-</dl>
-	            
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#fourth-->
-
-<div id="fifth">
-		<div class="story">
-		    <p>Every villain featured on this web page belongs to Disney. I just really love Disney, especially their villains. 
-            
-            <ul>
-         <li>   <a class="work" href="MicrositeForWacom/index.html">Microsite for Wacom Tablet</a></li>
-    
-          <li>  <a class="work" href="SweetTidbits/index.html">Sweet Tidbits</a></li>
-	     </ul>   
-            
-            
-            </p>
-            
-            <h3>Visit my other web projects!</h3>
-            
-	        
-	        
-	    </div> <!--.story-->
-	</div> <!--#fifth-->
-
-    <script>
-    (function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
+        <script>
+        $(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pauseOnHover: true,
+    interval: 7000,
   });
+    });
+        </script>
+        <script>
+            
+            
+/*DROP DOWN MENU*/
+            
+            function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
-})(jQuery);
-    
-    </script>
-   
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+            
+            /*END OF DROP DOWN*/
  
-</body>
+            
+   
+    </script>
+</head>
+<body>
+    
+    <div id="top-section">
+        <span>
+           <a href="">Become a member</a>
+            <a href="">Sign In</a>
+        </span>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+        
+    <div id="navigation">
+        <img id=logo-mobile src="img/ISMS-logo.png"/>
+     <!--Drop down menu-->   
+        <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">About Us</a>
+    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833">Membership</a>
+    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559">Education</a>
+    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506">Governmental Affairs</a>
+    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230">Resources</a>
+      
+      
+  </div>
+</div>
+        <!--END OF DROP DOWN-->
+        
+        <nav class="navbar">
+         <img id=logo src="img/ISMS-logo.png"/>
+            <ul>
+                <li><a href=index.html class="about">About Us</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833">Membership</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559">Media</a></li>
+                <li><a href="https://www.isms.org/Education/ISMS_Education_Center/">Education</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506">Governmental Affairs</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230">Resources</a></li>
+                
+            </ul>
+        </nav>
+        
+        </div>
+        </div>
+    </div>
+<div class="container-fluid">
+    
+    <div id=content>
+        
+        <div class="row row-eq-height">
+            <div class="col-md-6" >
+        
+            
+            <h3>Mission</h3>
+            <p>The Illinois State Medical Society is a professional organization that represents and unifies its physician members as they practice the science and art of medicine. The Society represents the interests of member physicians, advocates for patients and promotes the doctor/patient relationship, the ethical practice of medicine, and the betterment of the public health.
+            </p>
+        
+            </div>
+             <div class="col-md-6" id="mission">
+        
+            <h3>History</h3>
+            <p>In Springfield, Illinois, June of 1840, 12 physicians and surgeons of the State of Illinois assembled to make preliminary arrangements for the organization of the Illinois State Medical Society. These physicians were concerned with the solution of ethical, scientific, legislative and economic problems plaguing physicians. From this embryonic beginning, ISMS has grown into the leading advocate of Illinois physicians and patients. Since its inception, ISMS membership has represented the overwhelming majority of Illinois physicians statewide, from all specialties and practice types.
+            </p>
+        
+            </div>
+        </div>
+        
+        <div id=reviews class="row row-eq-height">
+            <div class="col-md-6 img-box">
+                <img src="img/31ba649.png"/><img src="img/doctors-990x450.jpg"/>           
+            </div>
+            <!--Reviews Slider-->
+            <div class="col-md-6  ">
+                <h3>We're dedicated to providing the best care and support to all of our members. Below are some reviews from our current members. </h3>
+             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>Randy Smith, DC- Doctor of Chiropractic at Chicago Chiropractic and Sports Medicine. ISMS member since 2006.</small>
+                </div>
+              </div>
+            </blockquote>
+              <img class=" center-block img-circle" src="img/review1.jpg" style="width: 200px;height:200px;">
+                
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+            
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Nicole Davis- Resident Doctor at Cook County Hospital. ISMS Member since 2014.</small>
+                </div>
+              </div>
+            </blockquote>
+              
+              <img class="center-block img-circle" src="img/review2.jpg" style="width: 200px;height:200px;">
+              
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+               
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Amelia Parker- Resident Doctor at Jackson Park Hospital. ISMS Member since 2015.</small>
+                </div>
+              </div>
+            </blockquote>
+               <img class="center-block img-circle" src="img/review3.jpg" style="width: 200px;height:200px;">
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div> 
+            
+            </div>
+        </div>
+ 
+
+<div class="row " id="menu-section">
+             
+<div class="col-md-12" id="sub-menu">
+    
+  <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <h4 class="panel-title">
+                    Code of Ethics
+                </h4></a>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <p><strong>WHEREAS</strong>, The medical profession has long subscribed to a body of ethical statements developed primarily for the benefit of the patient; and</p>
+                    <p><strong>WHEREAS</strong>, As a member of this profession, a physician must recognize responsibility not only to patients, but also to society, to other health professionals and to self; therefore, be it</p>
+                    <p><strong>RESOLVED</strong>, That the following Code of Ethics be adopted by the Illinois State Medical Society not as laws, but standards of conduct that define the essentials of honorable behavior for the physician:</p>
+                    <ol>
+                    <li>A physician shall be dedicated to providing competent medical service with compassion and respect for human dignity and rights.</li>
+                    <li>A physician shall uphold the standards of professionalism, be honest in all professional interactions, and strive to report physicians deficient in character or competence, or those who engage in fraud or deception, to appropriate entities.</li>
+                    <li>A physician shall respect the law and also recognize a responsibility to seek changes in those requirements that are contrary to the best interest of the patient.</li>
+                    <li>A physician shall respect the rights of patients, colleagues, and other health professionals, and shall safeguard patient confidences and privacy, within the constraints of the law.</li>
+                    <li>A physician shall continue to study, apply and advance scientific knowledge, maintain commitment to medical education, make relevant information available to patients, colleagues, and the public, obtain consultation, and use the talents of other health professionals when indicated.</li>
+                    <li>A physician shall, in the provision of appropriate patient care, except in emergencies, be free to choose whom to serve, with whom to associate, and the environment in which to provide medical service.</li>
+                    <li>A physician shall recognize a responsibility to participate in activities contributing to an improved community and the betterment of public health.</li>
+                    <li>A physician shall, while caring for a patient, regard responsibility to the patient as paramount.</li>
+                    <li>A physician shall support access to medical care for all people.&nbsp;</li>
+                      </ol>
+                    <p>"Ethical standards are the foundation of a profession. As one profession or House of Medicine, the ISMS and AMA have identical ethical standards."</p>
+                    <p align="center"><strong><em>Adopted by the Illinois State Medical Society <br />House of Delegates <br />November 1981 <br />Revised 2002</em></strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <h4 class="panel-title">
+                   Society Structure
+                </h4></a>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p><strong>House of Delegates</strong>: The ISMS House of Delegates is the forum where direction for the ISMS is determined. Once a year, members of the ISMS House of Delegates come together to debate and vote upon resolutions which will set direction for the Society. The House is comprised of members elected by each county medical society. Every ISMS member has the right to make their voice heard in a meaningful way through the democratic process and elected county delegates. Resolutions adopted by the House as official ISMS policy are implemented and overseen by the ISMS Board of Trustees.</p>
+                    <p><strong>Board of Trustees</strong>: The ISMS Board of Trustees is elected by members of the House of Delegates at the Society's annual meeting. The Board is charged with carrying forward the agenda established by the House of Delegates.</p>
+                    <p><strong>Member Councils and Committees</strong>: Councils and committees offer ISMS members an opportunity to become actively involved in the Society and in organized medicine at the state level. Through more than a dozen ISMS councils and committees, doctors express their views on topics affecting medicine and help direct ISMS actions.</p>
+                    <p>The county medical societies are the source of nominations for ISMS council and committee posts. Many physicians first get involved in committee work at the local level.</p>
+                    <p><strong>Membership Categories</strong>: There are several types of ISMS membership categories. ISMS members consist of Regular members, Group members, Emeritus members, Retired members, Service members, Distinguished members, In-training members and Student members. All members enjoy full rights and privileges, including the right to vote and hold office. <a title="Apply for membership today" href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=2147485052">Apply for membership today</a>.</p>
+                    <ul>
+                    <li><p><strong>Regular Members</strong>. Regular members shall be those physicians licensed to practice medicine in all its branches in the State of Illinois, who are either residents of the State of Illinois or who practice principally in Illinois, are persons of good moral character and professional standing and members of their ISMS component society.</p>
+                    <p>Members in good standing moving out of Illinois may retain membership (not to exceed one year) in the Illinois State Medical Society until they are accepted into membership in the medical society of the state to which they have moved.</p>
+                    <p>Physicians serving as full-time employees of the American Medical Association and other physicians licensed in one of the states or territories of the United States but not licensed in Illinois may become regular members although they are not actively engaged in the practice of medicine.</p></li>
+                    <li><p><strong>Group Members</strong>. Group members are those physicians practicing within a group eligible for and receiving a 15 percent reduction in dues as provided for in the ISMS bylaws, with group defined as the provision of health care services by physicians who are formally organized as a legal entity in which business and clinical facilities, records and personnel are shared; income from medical services provided by the group are treated as receipts of the group and distributed according to some prearranged plan.</p></li>
+                    <li><p><strong>Emeritus Members</strong>. Emeritus members are those who have been regular members in good standing for 35 years and have reached or will have reached the age of 70 before the next fiscal year of the Society, have made written application which is received by their component society prior to December 31 and have been recommended by their component society for emeritus status. Such membership shall be effective January first of the year following election. Credit for membership in other American Medical Association constituent societies shall be accorded transferees, provided they have been members of the Society for at least five years.</p></li>
+                    <li><p><strong>Retired Members</strong>. Retired members shall consist of those who have been regular members and who by reason of age or incapacity have retired from active practice and who upon application and recommendation from their component society have been made retired members. Retired status is not available to physicians who assume compensated positions in the health care field after retiring from medical practice.</p></li>
+                    <li><p><strong>Service Members</strong>. Physicians serving as medical officers in the United States Governmental Services, who are members of a component society, so long as they are engaged actively full-time in their respective service, and thereafter if they have been retired on account of age or physical disability, shall be elected to service membership.</p></li>
+                    <li><p><strong>Distinguished Members</strong>. Physicians of Illinois or other states or foreign countries who have risen to prominence in the profession, teachers of medicine or of the sciences allied to medicine, not eligible for regular membership, or members of associated arts and sciences, who have made significant contributions to medicine may be nominated by any member of the House of Delegates and may be elected by the House at any annual convention by a two-thirds affirmative vote of those present (credentialed). They shall not be considered as members in determining the number of delegates to the American Medical Association, but they may participate in all other society activities.</p></li>
+                    <li><p><strong>In-Training Members</strong>. In-training members are persons who are medical school graduates, of good moral character and professional standing and serving an internship or residency approved by the American Medical Association in the State of Illinois and are members of a component medical society. Membership shall end at the end of the year in which training is terminated. Following this, in-training members may apply for regular membership through their component society.</p><li>
+                    <li><p><strong>Student Members</strong>. Student members are those who are currently enrolled in an Illinois medical school or are Illinois residents enrolled in an approved medical school within the boundaries of the United States, are of good moral character, professional and academic standing and student members of a component society.</p></li>
+                    </ul>
+                    <p>Please contact <a href="mailto:membership@isms.org">membership@isms.org</a> for dues information.</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <h4 class="panel-title">
+                    Officials Directory
+                </h4></a>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Information goes here</p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <h4 class="panel-title">
+                    Councils and Committees
+                </h4></a>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Information goes here</p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                <h4 class="panel-title">
+                    Staff Directory
+                </h4></a>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Information goes here</p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                <h4 class="panel-title">
+                    ISMS Calendar
+                </h4></a>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Information goes here</p>
+                </div>
+            </div>
+        </div>
+      
+      <div class="panel panel-default">
+            <div class="panel-heading">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                <h4 class="panel-title">
+                    Event Sponsorships
+                </h4></a>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>Information goes here</p>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    
+    
+    
+</div> <!--END OF SUB MENU-->
+    
+    
+    </div>
+ 
+</div>
+    </div>    
+    <footer>
+    <div class="row">
+        <div class="col-md-2">
+            <p><strong>Chicago Office</strong></p>
+            <p>
+            20 N. Michigan Ave., Ste. 700
+                Chicago, IL 60602
+                Phone: 312-782-1654
+                Toll Free: 800-782-4767
+                Fax: 312-782-2023
+                Email: info@isms.org
+            </p>
+        </div>
+         <div class="col-md-2">
+            <p><strong>Springfield Office</strong></p>
+            <p>
+                600 S. Second St., Ste. 200
+                Springfield, IL 62704
+                Phone: 217-528-5609
+                Toll Free: 800-782-4767
+                Fax: 312-782-2023
+                Email: info@isms.org
+            </p>
+        </div>
+        <div class="col-md-4">
+            <div class="social-media">
+            <h5>Follow Us on Social Media</h5>
+            <span>
+            <a href="https://www.facebook.com/pages/Illinois-State-Medical-Society/275256955849107"><img class="icons" src="img/facebook_icon.png"/></a><a href="http://twitter.com/illinoisdoctors"><img class="icons" src="img/twitter_icon.png"/></a><a href="http://www.linkedin.com/company/64179?trk=tyah"><img class="icons" src="img/linked_icon.png"/></a><a href="https://www.isms.org/core/images/icon-youtube.jpg"><img class="icons" src="img/youtube_icon.png"/></a>
+            </span>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <h5><u>Site Map</u></h5>
+            <ul>
+                <a href="index.html"><li>About Us</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833"><li>Membership</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559"><li>Media</li></a>
+                <a href="https://www.isms.org/Education/ISMS_Education_Center/"><li>Education</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506"><li>Governmental Affairs</li></a>
+                <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230"><li>Resources</li></a>
+            </ul>
+        </div>
+        </div>
+    
+    
+    </footer>
+    
+</body>    
 </html>
