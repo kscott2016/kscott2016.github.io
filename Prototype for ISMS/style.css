@@ -5,7 +5,7 @@ body{
 #top-section{
     
     padding: 10px;
-    background-color: rgb(40,32,92);
+    background-color: rgb(21,31,60);
     width:100%;
 }
 
@@ -17,22 +17,32 @@ body{
 }
 
 
+
+div.row.row-eq-height{
+    margin-top: 0;
+}
+
 .img-box>img{
     width:100%;
 }
 #navigation{
-    background-color:rgb(40,32,92);
+    background-color:rgb(21,31,60);
     list-style: none;
     color: white;
     display:inline-block;
     width:100%;
-    margin: 0;
+    margin-bottom: 0;
 }
+
 
 
 #logo{
     float: left;
    /*background-color:rgb(40,32,92);*/
+}
+
+#logo-mobile{
+    display: none;
 }
 
 .container-fluid{
@@ -53,10 +63,6 @@ nav a{
     text-decoration: none;
     
 }
-.accordion div a:hover{
-    text-decoration: none;
-    color: antiquewhite;
-}
 
  nav>ul>li{
     float: right;
@@ -66,16 +72,6 @@ nav a{
     color: white;
     text-decoration: none;
      
-}
-
-}
-
-#sub-menu{
-    
-    border:50px solid blue;
-    background-color: indigo;
-    
-    
 }
 
 img{
@@ -105,115 +101,101 @@ nav li {
 .navbar{
     height: auto;
     margin-bottom: 0;
+    clear: both;
+    right: 0;
 }
 
-#content{
+.container-fluid>#content{
     
     display: inline;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
 }
 
 #mission{
     
-    background-color: darkslateblue;
+    background-color: rgb(21,31,60);
     color: white;
     height: 100%;
     margin-top: 0;
 }
 
 #sub-menu{
-    background-color: darkslateblue;
+    
+    margin: 10px;
     
 }
 
-#reviews{
-    border:3px solid indigo;
+#menu-section{
+    background-color: rgb(21,31,60);
 }
+
+/*drop down menu*/
+
+
+.dropbtn {
+    background-color: rgb(21,31,60);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(21,31,60);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    display:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.show {display:block;}
+
+/*end of drop down*/
 
 /*sub menu*/
 
+ #accordion .glyphicon { margin-right:10px; }
+      .panel-collapse>.list-group .list-group-item:first-child {border-top-right-radius: 0;border-top-left-radius: 0;}
+      .panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
+      .panel-collapse>.list-group {margin-bottom: 0;}
+      .panel-collapse .list-group-item {border-radius:0;}
 
+      .panel-collapse .list-group .list-group {margin: 0;margin-top: 10px;}
+      .panel-collapse .list-group-item li.list-group-item {margin: 0 -15px;border-top: 1px solid #ddd !important;border-bottom: 0;padding-left: 30px;}
+      .panel-collapse .list-group-item li.list-group-item:last-child {padding-bottom: 0;}
 
-article.accordion
-{
-	display: block;
-	width:auto;
-    height:500px;
-	margin: 10px 10px;
-	background-color:rgb(40,32,92);
-	overflow: auto;
-	border-radius: 5px;
-	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
-}
+      .panel-collapse div.list-group div.list-group{margin: 0;}
+      .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd !important;border-bottom: 0;padding-left: 30px;}
+      .panel-collapse .list-group-item li.list-group-item {border-top: 1px solid #DDD !important;}
 
-article.accordion section
-{
-	position: relative;
-	display: block;
-	float: left;
-	width: 3%;
-	height: 475px;
-	margin: 0.5em 0 0.5em 0.5em;
-	color: darkslateblue;
-	background-color: darkslateblue;
-	overflow:scroll;
-	border-radius: 3px;
-}
-
-article.accordion section h2
-{
-	position: absolute;
-	font-size: 12pt;
-	width: 15em;
-	height: 2em;
-	top: 12em;
-	left: 0;
-    top:50%;
-	text-indent: 1em;
-	color: #ddd;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	-ms-transform-origin: 0 0;
-	-o-transform-origin: 0 0;
-	transform-origin: 0 0;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-}
-
-article.accordion section h2 a
-{
-	display: inline;
-	width: 100%;
-	line-height: 2em;
-	text-decoration: none;
-	color: inherit;
-	outline: 0 none;
-}
-
-article.accordion section:target
-{
-	width: 75%;
-	padding: 0 1em;
-	color: #333;
-	background-color: #fff;
-}
-
-article.accordion section:target h2
-{
-	position: static;
-	font-size: 1.3em;
-	text-indent: 0;
-	color: #333;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
 
 
 /*end of sub menu*/
@@ -246,7 +228,7 @@ article.accordion section:target h2
 {
   right: -12px !important;
 }
-/* Changes the position of the indicators */
+
 #quote-carousel .carousel-indicators 
 {
   right: 50%;
@@ -254,7 +236,7 @@ article.accordion section:target h2
   bottom: 0px;
   margin-right: -19px;
 }
-/* Changes the color of the indicators */
+
 #quote-carousel .carousel-indicators li 
 {
   background: #c0c0c0;
@@ -297,12 +279,12 @@ div.social-media {
     text-align: center; 
 }
 footer{
-    background-color: darkslateblue;
+    background-color: rgb(21,31,60);
     color: white;
     font-size:8pt;
     padding: 10px;
     width: 100%;
-    border-top:2px solid indigo; 
+    border-top:2px solid rgb(21,31,60); 
 }
 
 footer ul a,h5{
@@ -320,7 +302,7 @@ footer ul a,h5{
 @media (min-width: 768px) { 
     #quote-carousel 
     {
-      margin-bottom: 0;
+      margin-bottom: 10px;
       padding: 0 40px 30px 40px;
       margin-top: 30px;
     }
@@ -330,7 +312,12 @@ footer ul a,h5{
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) { 
     
-    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #reviews{
+        
+        margin:10px;
+        
+    }
     
     #quote-carousel .carousel-indicators {
         bottom: -20px !important;  
@@ -346,5 +333,30 @@ footer ul a,h5{
         width: 20px;
         height: 20px;
     }
+    
+    
+}
+
+@media(max-width:1000px){
+    
+    .navbar{
+        display:none;
+    }
+    
+    .dropdown{
+        
+        display: block;
+        margin:10px;
+    }
+ 
+    #logo-mobile{
+        display: block;
+        float: left;
+        height:100px;
+        width:auto;
+        margin:10px;
+    }
+    
+    
 }
 
