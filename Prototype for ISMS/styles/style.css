@@ -72,7 +72,7 @@ img{
 
 img.arrow-tablet{
     
-    width:20px;
+    width:10px;
     height:auto;
 }
 
@@ -487,6 +487,12 @@ footer ul a,h5{
         background-color:rgb(21,31,60) ;
         padding:15px 40px;
         
+    }
+    
+    img.arrow{
+        
+        width:10px;
+        height:auto;
     }
 
     
