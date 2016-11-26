@@ -70,6 +70,12 @@ img{
   height: auto;
 }
 
+img.arrow-tablet{
+    
+    width:20px;
+    height:auto;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -382,11 +388,6 @@ footer ul a,h5{
         height: 20px;
     }
     
-    img.arrow-tablet{
-    
-    width:20px;
-    height:auto;
-}
     #quote-carousel img{
         
         display: none;
