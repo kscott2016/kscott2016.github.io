@@ -80,16 +80,16 @@ window.onclick = function(event) {
         <img id=logo-mobile src="img/ISMS-logo.png"/>
      <!--Drop down menu-->   
         <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="index.html">About Us</a>
-    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833">Membership</a>
-    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559">Education</a>
-    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506">Governmental Affairs</a>
-    <a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230">Resources</a>
-      
-      
-  </div>
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href=index.html class="about">About Us</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485833">Membership</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147485559">Media</a></li>
+                <li><a href="https://www.isms.org/Education/ISMS_Education_Center/">Education</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=2147484506">Governmental Affairs</a></li>
+                <li><a href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=ID&ItemID=230">Resources</a></li>
+  </ul>
 </div>
         <!--END OF DROP DOWN-->
         
@@ -113,24 +113,35 @@ window.onclick = function(event) {
     
     <div id=content>
         <div class="row row-eq-height" id=mah>
-            <div class="col-md-6" >
-        
+            <div class="col-sm-6" id="history" >
+                <h3>History</h3>
+                <p>In Springfield, Illinois, June of 1840, 12 physicians and surgeons of the State of Illinois assembled to make preliminary arrangements for the organization of the Illinois State Medical Society. These physicians were concerned with the solution of ethical, scientific, legislative and economic problems plaguing physicians. From this embryonic beginning, ISMS has grown into the leading advocate of Illinois physicians and patients. Since its inception, ISMS membership has represented the overwhelming majority of Illinois physicians statewide, from all specialties and practice types.
+                </p>
+                </div>
             
+            <div class="col-sm-6" id="mission">    
             <h3>Mission</h3>
             <p>The Illinois State Medical Society is a professional organization that represents and unifies its physician members as they practice the science and art of medicine. The Society represents the interests of member physicians, advocates for patients and promotes the doctor/patient relationship, the ethical practice of medicine, and the betterment of the public health.
             </p>
-        
             </div>
-             <div class="col-md-6" id="mission">
+        </div>
         
-            <h3>History</h3>
-            <p>In Springfield, Illinois, June of 1840, 12 physicians and surgeons of the State of Illinois assembled to make preliminary arrangements for the organization of the Illinois State Medical Society. These physicians were concerned with the solution of ethical, scientific, legislative and economic problems plaguing physicians. From this embryonic beginning, ISMS has grown into the leading advocate of Illinois physicians and patients. Since its inception, ISMS membership has represented the overwhelming majority of Illinois physicians statewide, from all specialties and practice types.
+        <div class="row row-eq-height" id="history-phone">
+            <div class="col-xs-12">
+                <h3>History</h3>
+                <p>In Springfield, Illinois, June of 1840, 12 physicians and surgeons of the State of Illinois assembled to make preliminary arrangements for the organization of the Illinois State Medical Society. These physicians were concerned with the solution of ethical, scientific, legislative and economic problems plaguing physicians. From this embryonic beginning, ISMS has grown into the leading advocate of Illinois physicians and patients. Since its inception, ISMS membership has represented the overwhelming majority of Illinois physicians statewide, from all specialties and practice types.
+                </p>
+                </div>
+            </div>
+            <div class="row row-eq-height" id="mission-phone">
+            <div class="col-xs-12">    
+            <h3>Mission</h3>
+            <p>The Illinois State Medical Society is a professional organization that represents and unifies its physician members as they practice the science and art of medicine. The Society represents the interests of member physicians, advocates for patients and promotes the doctor/patient relationship, the ethical practice of medicine, and the betterment of the public health.
             </p>
+            </div>
         </div>
-        </div>
-        
-        <div class="row row-eq-height" id="sub-menu">
-            <div class="col-md-6">
+        <div class="row">
+             <div class="col-xs-12" id="sub-menu-phone">
                 <div class="buttons sub-menu-options">
                     <ul>
                         <li><a  class="showSingle" target="1">Code of Ethics</a></li>
@@ -140,40 +151,68 @@ window.onclick = function(event) {
                         <li><a  class="showSingle" target="5">ISMS Calendar</a></li>
                         <li><a  class="showSingle" target="6">Event Sponsorship</a></li>
                     </ul>
+                </div>
+                <div class="row" id="sub-menu-phone">
+                <div class="col-xs-12">
+                <div class="dropdown sub-menu-phone">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    
+      <li><a  class="showSingle" target="1">Code of Ethics</a></li>
+                        <li><a  class="showSingle" target="2">Society Structure</a></li>
+                        <li> <a class="showSingle" target="3">Officials Directory</a></li>
+                        <li><a  class="showSingle" target="4">Staff Directory</a></li>
+                        <li><a  class="showSingle" target="5">ISMS Calendar</a></li>
+                        <li><a  class="showSingle" target="6">Event Sponsorship</a></li>
+      
+  </ul>
 </div>
-            <!--<div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-            <div  class="panel-heading">
-               <a data-toggle="collapse" data-parent="#accordion" href="#codeOfEthics" class="showSingle">
-                <h4 class="panel-title">
-                    Code of Ethics
-                </h4></a>
+                </div>
+                </div>
+                
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                 <a data-toggle="collapse" data-parent="#accordion" href="#societyStructure" class="showSingle">
-                <h4 class="panel-title">
-                   Society Structure
-                </h4></a>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <a data-toggle="collapse" data-parent="#accordion" href="#officialsDirectory" class="showSingle">
-                <h4 class="panel-title">
-                    Officials Directory
-                </h4></a>
-            </div>
-        </div>
-        </div> END OF MENU SELECTION-->
+        
+        <div class="row row-eq-height" id="sub-menu">
+            <div class="col-sm-6" id="sub-menu-tablet">
+                <div class="buttons sub-menu-options">
+                    <ul>
+                        <li><a  class="showSingle" target="1">Code of Ethics</a></li>
+                        <li><a  class="showSingle" target="2">Society Structure</a></li>
+                        <li> <a class="showSingle" target="3">Officials Directory</a></li>
+                        <li><a  class="showSingle" target="4">Staff Directory</a></li>
+                        <li><a  class="showSingle" target="5">ISMS Calendar</a></li>
+                        <li><a  class="showSingle" target="6">Event Sponsorship</a></li>
+                    </ul>
+                </div>
+                <div class="row" id="sub-menu-phone">
+                <div class="col-xs-12">
+                <div class="dropdown sub-menu-phone">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Menu
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    
+      <li><a  class="showSingle" target="1">Code of Ethics</a></li>
+                        <li><a  class="showSingle" target="2">Society Structure</a></li>
+                        <li> <a class="showSingle" target="3">Officials Directory</a></li>
+                        <li><a  class="showSingle" target="4">Staff Directory</a></li>
+                        <li><a  class="showSingle" target="5">ISMS Calendar</a></li>
+                        <li><a  class="showSingle" target="6">Event Sponsorship</a></li>
+      
+  </ul>
+</div>
+                </div>
+                </div>
+                
             </div>
              <!--answer section-->
-            <div class="col-md-6">
+
+            <div class="col-sm-6">
                <div class="answer-box">
                    
                    <div id="div1" class="targetDiv">
-                       
+                       <div id="topOfEthics"></div> 
                        <h4><u>Code Of Ethics</u></h4>
                     <p><strong>WHEREAS</strong>, The medical profession has long subscribed to a body of ethical statements developed primarily for the benefit of the patient; and</p>
                     <p><strong>WHEREAS</strong>, As a member of this profession, a physician must recognize responsibility not only to patients, but also to society, to other health professionals and to self; therefore, be it</p>
@@ -191,10 +230,10 @@ window.onclick = function(event) {
                       </ol>
                     <p>"Ethical standards are the foundation of a profession. As one profession or House of Medicine, the ISMS and AMA have identical ethical standards."</p>
                     <p align="center"><strong><em>Adopted by the Illinois State Medical Society <br />House of Delegates <br />November 1981 <br />Revised 2002</em></strong></p>
-                   
+                       <a href="#topOfEthics">Back to top <img class="arrow-tablet" style src="img/caret-arrow-up%20(1).png"/></a>
                    </div>
 <div id="div2" class="targetDiv" style="display:none;">
-    
+    <div id="topOfStructure"></div>
                 <h4><u>Society Structure</u></h4>
                    
                    <p><strong>House of Delegates</strong>: The ISMS House of Delegates is the forum where direction for the ISMS is determined. Once a year, members of the ISMS House of Delegates come together to debate and vote upon resolutions which will set direction for the Society. The House is comprised of members elected by each county medical society. Every ISMS member has the right to make their voice heard in a meaningful way through the democratic process and elected county delegates. Resolutions adopted by the House as official ISMS policy are implemented and overseen by the ISMS Board of Trustees.</p>
@@ -215,7 +254,7 @@ window.onclick = function(event) {
                     <li><p><strong>Student Members</strong>. Student members are those who are currently enrolled in an Illinois medical school or are Illinois residents enrolled in an approved medical school within the boundaries of the United States, are of good moral character, professional and academic standing and student members of a component society.</p></li>
                     </ul>
                     <p>Please contact <a href="mailto:membership@isms.org">membership@isms.org</a> for dues information.</p>
-                   
+                   <a href="#topOfStructure">Back to top <img class="arrow-tablet" style src="img/caret-arrow-up%20(1).png"/></a>
                    </div>
 <div id="div3" class="targetDiv" style="display:none;">
     <h4><u>Officials Directory</u></h4>
@@ -235,46 +274,91 @@ window.onclick = function(event) {
                    </div>
                    
                     
-                <!--CODE OF ETHICS-->
-                  
-                   <!-- <div id="codeOfEthics" class="panel-collapse collapse targetDiv">
-                    <div class="panel-body">
-                        <p>Code Information goes here</p>
-                    </div>
-                    </div>
-                    
-                  <!--END OF CODE OF ETHICS-->
-                    
-                <!--SOCIETY STRUCTURE-->  
-                    
-                 <!--   <div id="societyStructure" class="panel-collapse collapse targetDiv">
-                    <div class="panel-body">
-                        <p>Structure Information goes here</p>
-                    </div>
-                    </div>
-                <!--END OF SOCIETY STRUCTURE-->
-                    
-                <!--OFFICIALS DIRECTORY--> 
-                 <!--   <div id="officialsDirectory" class="panel-collapse collapse targetDiv">
-                    <div class="panel-body">
-                        <p>Officials Information goes here</p>
-                    </div>
-                    </div>
-                <!--END OF OFFICIALS DIRECTORY-->   
-                      
                           
                 </div>
             </div>
         </div>
+        
+                    <div class="row">
+                <div class="col-xs-12" id="answer-section-phone">
+                     
+                <div class="answer-box">
+                   <div id="topOfEthics"></div>
+                   <div id="div1" class="targetDiv">
+                       <h4><u>Code Of Ethics</u></h4>
+                    <p><strong>WHEREAS</strong>, The medical profession has long subscribed to a body of ethical statements developed primarily for the benefit of the patient; and</p>
+                    <p><strong>WHEREAS</strong>, As a member of this profession, a physician must recognize responsibility not only to patients, but also to society, to other health professionals and to self; therefore, be it</p>
+                    <p><strong>RESOLVED</strong>, That the following Code of Ethics be adopted by the Illinois State Medical Society not as laws, but standards of conduct that define the essentials of honorable behavior for the physician:</p>
+                    <ol>
+                    <li>A physician shall be dedicated to providing competent medical service with compassion and respect for human dignity and rights.</li>
+                    <li>A physician shall uphold the standards of professionalism, be honest in all professional interactions, and strive to report physicians deficient in character or competence, or those who engage in fraud or deception, to appropriate entities.</li>
+                    <li>A physician shall respect the law and also recognize a responsibility to seek changes in those requirements that are contrary to the best interest of the patient.</li>
+                    <li>A physician shall respect the rights of patients, colleagues, and other health professionals, and shall safeguard patient confidences and privacy, within the constraints of the law.</li>
+                    <li>A physician shall continue to study, apply and advance scientific knowledge, maintain commitment to medical education, make relevant information available to patients, colleagues, and the public, obtain consultation, and use the talents of other health professionals when indicated.</li>
+                    <li>A physician shall, in the provision of appropriate patient care, except in emergencies, be free to choose whom to serve, with whom to associate, and the environment in which to provide medical service.</li>
+                    <li>A physician shall recognize a responsibility to participate in activities contributing to an improved community and the betterment of public health.</li>
+                    <li>A physician shall, while caring for a patient, regard responsibility to the patient as paramount.</li>
+                    <li>A physician shall support access to medical care for all people.&nbsp;</li>
+                      </ol>
+                    <p>"Ethical standards are the foundation of a profession. As one profession or House of Medicine, the ISMS and AMA have identical ethical standards."</p>
+                    <p align="center"><strong><em>Adopted by the Illinois State Medical Society <br />House of Delegates <br />November 1981 <br />Revised 2002</em></strong></p>
+                       <a href="#topOfEthics">Back to top <img class="arrow" src="img/caret-arrow-up%20(1).png"/></a>
+                   </div>
+<div id="div2" class="targetDiv" style="display:none;">
+    <div id="topOfStructure"></div>
+                <h4><u>Society Structure</u></h4>
+                   
+                   <p><strong>House of Delegates</strong>: The ISMS House of Delegates is the forum where direction for the ISMS is determined. Once a year, members of the ISMS House of Delegates come together to debate and vote upon resolutions which will set direction for the Society. The House is comprised of members elected by each county medical society. Every ISMS member has the right to make their voice heard in a meaningful way through the democratic process and elected county delegates. Resolutions adopted by the House as official ISMS policy are implemented and overseen by the ISMS Board of Trustees.</p>
+                    <p><strong>Board of Trustees</strong>: The ISMS Board of Trustees is elected by members of the House of Delegates at the Society's annual meeting. The Board is charged with carrying forward the agenda established by the House of Delegates.</p>
+                    <p><strong>Member Councils and Committees</strong>: Councils and committees offer ISMS members an opportunity to become actively involved in the Society and in organized medicine at the state level. Through more than a dozen ISMS councils and committees, doctors express their views on topics affecting medicine and help direct ISMS actions.</p>
+                    <p>The county medical societies are the source of nominations for ISMS council and committee posts. Many physicians first get involved in committee work at the local level.</p>
+                    <p><strong>Membership Categories</strong>: There are several types of ISMS membership categories. ISMS members consist of Regular members, Group members, Emeritus members, Retired members, Service members, Distinguished members, In-training members and Student members. All members enjoy full rights and privileges, including the right to vote and hold office. <a title="Apply for membership today" href="https://www.isms.org/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=2147485052">Apply for membership today</a>.</p>
+                    <ul>
+                    <li><p><strong>Regular Members</strong>. Regular members shall be those physicians licensed to practice medicine in all its branches in the State of Illinois, who are either residents of the State of Illinois or who practice principally in Illinois, are persons of good moral character and professional standing and members of their ISMS component society.</p>
+                    <p>Members in good standing moving out of Illinois may retain membership (not to exceed one year) in the Illinois State Medical Society until they are accepted into membership in the medical society of the state to which they have moved.</p>
+                    <p>Physicians serving as full-time employees of the American Medical Association and other physicians licensed in one of the states or territories of the United States but not licensed in Illinois may become regular members although they are not actively engaged in the practice of medicine.</p></li>
+                    <li><p><strong>Group Members</strong>. Group members are those physicians practicing within a group eligible for and receiving a 15 percent reduction in dues as provided for in the ISMS bylaws, with group defined as the provision of health care services by physicians who are formally organized as a legal entity in which business and clinical facilities, records and personnel are shared; income from medical services provided by the group are treated as receipts of the group and distributed according to some prearranged plan.</p></li>
+                    <li><p><strong>Emeritus Members</strong>. Emeritus members are those who have been regular members in good standing for 35 years and have reached or will have reached the age of 70 before the next fiscal year of the Society, have made written application which is received by their component society prior to December 31 and have been recommended by their component society for emeritus status. Such membership shall be effective January first of the year following election. Credit for membership in other American Medical Association constituent societies shall be accorded transferees, provided they have been members of the Society for at least five years.</p></li>
+                    <li><p><strong>Retired Members</strong>. Retired members shall consist of those who have been regular members and who by reason of age or incapacity have retired from active practice and who upon application and recommendation from their component society have been made retired members. Retired status is not available to physicians who assume compensated positions in the health care field after retiring from medical practice.</p></li>
+                    <li><p><strong>Service Members</strong>. Physicians serving as medical officers in the United States Governmental Services, who are members of a component society, so long as they are engaged actively full-time in their respective service, and thereafter if they have been retired on account of age or physical disability, shall be elected to service membership.</p></li>
+                    <li><p><strong>Distinguished Members</strong>. Physicians of Illinois or other states or foreign countries who have risen to prominence in the profession, teachers of medicine or of the sciences allied to medicine, not eligible for regular membership, or members of associated arts and sciences, who have made significant contributions to medicine may be nominated by any member of the House of Delegates and may be elected by the House at any annual convention by a two-thirds affirmative vote of those present (credentialed). They shall not be considered as members in determining the number of delegates to the American Medical Association, but they may participate in all other society activities.</p></li>
+                    <li><p><strong>In-Training Members</strong>. In-training members are persons who are medical school graduates, of good moral character and professional standing and serving an internship or residency approved by the American Medical Association in the State of Illinois and are members of a component medical society. Membership shall end at the end of the year in which training is terminated. Following this, in-training members may apply for regular membership through their component society.</p><li>
+                    <li><p><strong>Student Members</strong>. Student members are those who are currently enrolled in an Illinois medical school or are Illinois residents enrolled in an approved medical school within the boundaries of the United States, are of good moral character, professional and academic standing and student members of a component society.</p></li>
+                    </ul>
+                    <p>Please contact <a href="mailto:membership@isms.org">membership@isms.org</a> for dues information.</p>
+                   <a href="#topOfStructure">Back to top <img class="arrow" src="img/caret-arrow-up%20(1).png"/></a>
+                   </div>
+<div id="div3" class="targetDiv" style="display:none;">
+    <h4><u>Officials Directory</u></h4>
+    <p>Officials Directory content goes here</p></div>
+<div id="div4" class="targetDiv" style="display:none;">
+    <h3>Staff Directory</h3>
+    <p>Staff Directory content Goes here</p></div>
+                   
+                   <div id="div5" class="targetDiv" style="display:none;">
+                       <h4><u>ISMS Calendar</u></h4>
+                       <p>ISMS Calendar content Goes here</p>
+                   </div>
+                   
+                   <div id="div6" class="targetDiv" style="display:none;">
+                       <h4><u>Event Sponsorship</u></h4>
+                       <p>Event Sponsorship content goes here</p>
+                   </div>
+                   
+                    
+                          
+                </div>
+                </div>
+            </div>
 
         
         <div id=reviews class="row row-eq-height">
-            <div class="col-md-6 img-box">
+            <div class="col-sm-6 img-box">
                 <img src="img/31ba649.png"/><img src="img/doctors-990x450.jpg"/>           
             </div>
             <!--Reviews Slider-->
-            <div class="col-md-6  ">
-                <h3>We're dedicated to providing the best care and support to all of our members. Below are some reviews from our current members. </h3>
+            <div id="reviews-tablet" class="col-sm-6 ">
+                <h4>We're dedicated to providing the best care and support to all of our members. Below are some reviews from our current members. </h4>
              <div class="carousel slide" data-ride="carousel" id="quote-carousel">
         <!-- Bottom Carousel Indicators -->
         <ol class="carousel-indicators">
@@ -335,6 +419,72 @@ window.onclick = function(event) {
       </div> 
             
             </div>
+        </div>
+        <div id="reviews-phone">
+            <div class="row">
+            <div class="col-xs-12">
+                <h4>We're dedicated to providing the best care and support to all of our members. Below are some reviews from our current members. </h4>
+             <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-9">
+                  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+                  <small>Randy Smith, DC- Doctor of Chiropractic at Chicago Chiropractic and Sports Medicine. ISMS member since 2006.</small>
+                </div>
+              </div>
+            </blockquote>
+              <img class=" center-block img-circle" src="img/review1.jpg" style="width: 200px;height:200px;">
+                
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+            
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Nicole Davis- Resident Doctor at Cook County Hospital. ISMS Member since 2014.</small>
+                </div>
+              </div>
+            </blockquote>
+              
+              <img class="center-block img-circle" src="img/review2.jpg" style="width: 200px;height:200px;">
+              
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+               
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+                  <small>Amelia Parker- Resident Doctor at Jackson Park Hospital. ISMS Member since 2015.</small>
+                </div>
+              </div>
+            </blockquote>
+               <img class="center-block img-circle" src="img/review3.jpg" style="width: 200px;height:200px;">
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div> 
+            
+            </div>
+        </div>
         </div>
  
 </div>
